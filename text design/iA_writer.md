@@ -54,5 +54,4 @@ Kisko Labs is located downtown Helsinki, Between Kamppi and Ruoholahti. Our addr
 |																															 |
 ----------------------------------------------------------------
 
-
 This project is maintained by @viljamis & @kiskolabs. If you have any question or consider lending one of your devices to the lab, feel free to tweet or email us.
