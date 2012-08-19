@@ -1,0 +1,276 @@
+/*
+
+  TITLE:    Styles for new kiskolabs.com
+  AUTHOR:   @viljamis + @kiskolabs
+  VERSION:  0.1
+
+  MEMO FOR CONVERSIONS:
+  75%       =   12px, percentage(12 / 16)
+  81.25%    =   13px, percentage(13 / 16)
+  87.5%     =   14px, percentage(14 / 16)
+  93.75%    =   15px, percentage(15 / 16)
+  100%      =   16px, percentage(16 / 16)
+  106.25%   =   17px, percentage(17 / 16)
+  112.5%    =   18px, percentage(18 / 16)
+  118.75%   =   19px, percentage(19 / 16)
+  125%      =   20px, percentage(20 / 16)
+  131.25%   =   21px, percentage(21 / 16)
+  137.5%    =   22px, percentage(22 / 16)
+
+*/
+
+// Compass
+@import "compass/css3";
+
+// Colors
+$color-black: #333;
+$color-white: #fff;
+
+// Fonts
+$font: sans-serif;
+
+// Convert PX to EMS function
+$browser-context: 18; // Has to be same as <body> font-size
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em
+}
+
+@mixin image-replacement {
+  text-indent: -9999px;
+  overflow: hidden;
+  display: block;
+}
+
+@mixin clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin disable-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* RESET
+--------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  background: transparent;
+  border: 0;
+}
+
+img, embed, object, video { 
+  max-width: 100%;
+  height: inherit;
+  _width: 100%;
+}
+
+/* BASE
+--------------------------------------------- */
+
+.preload * {
+  @include transition(none !important);
+}
+
+html {
+  background: $color-white;
+}
+
+html,body {
+  height: 100%;
+}
+
+body {
+  padding: 2em 0 0;
+}
+
+.footer {
+  padding-bottom: 2em;
+}
+
+.wrapper {
+  position: relative;
+  margin: 1em auto 2em;
+  width: 84%;
+  max-width: em(900, 16);
+  //border: 1px solid rgba(0,0,0, .05);
+}
+
+/* TYPOGRAPHY
+--------------------------------------------- */
+
+body {
+  font: normal 100%/1.5em $font;
+  color: $color-black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  -moz-font-feature-settings: "liga=1, kern=1";
+  -ms-font-feature-settings: "liga" 1, "kern" 1;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 1.42382em;
+  font-weight: 700; // bold
+  letter-spacing: -0.025em;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  margin-bottom: 1.5em;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+.header p,
+.footer p {
+  font-weight: bold;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
+}
+
+sub, sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 65%;
+  line-height: 0;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+h1 {
+  margin: 0 0 .6em;
+  line-height: 1;
+  font-size: 3em;
+}
+
+h2 {
+  margin-bottom: .35em;
+  line-height: 1.5em;
+  font-size: 2em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin: .5em auto 1.5em auto;
+  display: block;
+}
+
+/*
+  LINKS
+--------------------------------------------- */
+
+a {
+  text-decoration: underline;
+  color: $color-black;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    background: transparent;
+    outline: none;
+  }
+
+}
+
+/*
+  TABLES
+--------------------------------------------- */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 3em;
+}
+
+td,th {
+  padding: 5px;
+  border-bottom: 1px solid lighten($color-black, 67%);
+}
+
+tr {
+  padding: 0;
+}
+
+th {
+  text-align: left;
+}
+
+@media screen and (max-width: 610px) {
+
+  .responsive_table table,
+  .responsive_table thead,
+  .responsive_table tbody,
+  .responsive_table th,
+  .responsive_table td,
+  .responsive_table tr {
+    display: block;
+  }
+
+  .responsive_table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .responsive_table tr {
+    border: 1px solid lighten($color-black, 67%);
+  }
+
+  .responsive_table td {
+    border: none;
+    border-bottom: 1px solid lighten($color-black, 67%);
+    position: relative;
+    padding-left: 50%;
+    white-space: normal;
+    text-align: left;
+  }
+
+  .responsive_table td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .responsive_table td:before {
+    content: attr(data-title);
+  }
+
+}
