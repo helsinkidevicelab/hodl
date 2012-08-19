@@ -23,11 +23,11 @@
 @import "compass/css3";
 
 // Colors
-$color-black: #333;
-$color-white: #fff;
-
-// Fonts
-$font: sans-serif;
+$color-black: lighten(#242321, 5%);
+$color-white: #f8f8f6;
+$color-beige: #9fa29b;
+$color-blue: #4174a3;
+$color-lightblue: #7aa6bf;
 
 // Convert PX to EMS function
 $browser-context: 18; // Has to be same as <body> font-size
@@ -97,43 +97,46 @@ html {
   background: $color-white;
 }
 
+.banner {
+  height: 400px;
+  background: $color-lightblue;
+}
+
 html,body {
   height: 100%;
 }
 
 .wrapper {
+  @include clearfix;
   position: relative;
   margin: 1em auto;
+  max-width: em(1100, 18);
+  height: 100%;
   width: 84%;
-  //border: 1px solid rgba(0,0,0, .05);
 }
 
-.section,
-.header {
+.section {
   margin: 0 0 2em;
 }
 
-.tagline,
-.devices,
-.footer {
-  background: lighten($color-black, 70%);
-  padding: 1em 0;
-}
+
 
 /* TYPOGRAPHY
 --------------------------------------------- */
 
 body {
-  font: normal 100%/1.5em $font;
+  font: 400 100%/1.5em "proxima-nova";
   color: $color-black;
 }
 
 h1, h2, h3, h4, h5, h6 {
   -moz-font-feature-settings: "liga=1, kern=1";
   -ms-font-feature-settings: "liga" 1, "kern" 1;
+  font-family: "proxima-nova-extra-condensed";
   text-rendering: optimizeLegibility;
   margin-bottom: 1.42382em;
-  font-weight: 700; // bold
+  font-weight: 400;
+  text-transform: uppercase;
   letter-spacing: -0.025em;
   -webkit-font-smoothing: antialiased;
 }
@@ -161,15 +164,42 @@ sup {
 }
 
 h1 {
-  margin-bottom: 0;
-  line-height: 1.2;
-  font-size: 2.5em;
+  z-index: 999;
+  font-family: "proxima-nova-extra-condensed";
+  margin: 0;
+  text-transform: uppercase;
+  color: $color-blue;
+  font-weight: 300;
+  line-height: .8;
+  font-size: 3em;
+  
+  span {
+    margin: .3em 0 .7em;
+    display: block;
+    font-family: "adrianna-extended";
+    font-size: 1em;
+    font-weight: 800;
+    color: $color-black;
+  }
 }
 
 h2 {
   margin-bottom: .35em;
   line-height: 1.5em;
   font-size: 1.5em;
+}
+
+.header {
+  padding: 2em 0 1em;
+
+
+
+  h2 {
+    font-size: 1.7em;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: $color-beige;
+  }
 }
 
 img {
@@ -179,13 +209,19 @@ img {
   display: block;
 }
 
+@media screen and (min-width: 40em) {
+  .header {
+    font-size: 200%;
+  }
+}
+
 /*
   LINKS
 --------------------------------------------- */
 
 a {
-  text-decoration: underline;
-  color: $color-black;
+  text-decoration: none;
+  color: $color-blue;
 
   &:hover {
     text-decoration: underline;
