@@ -8,7 +8,7 @@
 </Files>
 
 # Directory index and error document
-DirectoryIndex index.html
+DirectoryIndex index.php
 
 
 # Responsive Images 
