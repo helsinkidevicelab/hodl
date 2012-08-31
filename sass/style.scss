@@ -410,6 +410,10 @@ th:last-child {
   HEADER
 --------------------------------------------- */
 
+.illustration {
+  min-height: 100px;
+}
+
 .header {
   position: relative;
 
@@ -614,6 +618,10 @@ th:last-child {
 
 @media screen and (min-width: 42em) {
 
+  .illustration {
+    min-height: 300px;
+  }
+
   .col {
     width: 30.3%;
     margin-right: 4%;
@@ -689,6 +697,10 @@ th:last-child {
 }
 
 @media screen and (min-width: 56em) {
+
+  .illustration {
+    min-height: 400px;
+  }
 
   body {
     // Firefox 3.6 fix
@@ -841,6 +853,10 @@ th:last-child {
 
 @media screen and (min-width: 72em) {
 
+  .illustration {
+    min-height: 500px;
+  }
+
   .header {
 
     .nav {
@@ -864,6 +880,10 @@ th:last-child {
 }
 
 @media screen and (min-width: 85em) {
+
+  .illustration {
+    min-height: 600px;
+  }
 
   .wrapper {
     width: 68%;
@@ -890,6 +910,10 @@ th:last-child {
 }
 
 @media screen and (min-width: 102em) {
+
+  .illustration {
+    min-height: 700px;
+  }
 
   body {
     font-size: 112.5%;
