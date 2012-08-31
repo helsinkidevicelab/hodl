@@ -1,0 +1,978 @@
+/*
+
+  ____\/\\\_________/\\\____/\\\\\\\\\\\\______
+  ____\/\\\_______ /\\\____/\\\/////////\\_____
+  ____\//\\\______/\\\____\//\\\______\///_____
+  _____\//\\\____/\\\______\////\\\____________
+  ______\//\\\__/\\\__________\////\\\_________
+  _______\//\\\/\\\______________\////\\\______
+  ________\//\\\\\________/\\\______\//\\\_____
+  _________\//\\\________\///\\\\\\\\\\\/______
+  __________\///__________\////////////________
+
+  TITLE:    Styles for opendevicelab.com
+  AUTHOR:   @viljamis + @kiskolabs
+  VERSION:  0.1
+
+  MEMO FOR CONVERSIONS:
+  75%       =   12px, percentage(12 / 16)
+  81.25%    =   13px, percentage(13 / 16)
+  87.5%     =   14px, percentage(14 / 16)
+  93.75%    =   15px, percentage(15 / 16)
+  100%      =   16px, percentage(16 / 16)
+  106.25%   =   17px, percentage(17 / 16)
+  112.5%    =   18px, percentage(18 / 16)
+  118.75%   =   19px, percentage(19 / 16)
+  125%      =   20px, percentage(20 / 16)
+  131.25%   =   21px, percentage(21 / 16)
+  137.5%    =   22px, percentage(22 / 16)
+
+*/
+
+// Compass
+@import "compass/css3";
+
+// Colors
+$color-black: #333;
+$color-white: #fff;
+$color-blue: #155a9a;
+$color-lightblue: #29a4ea;
+$color-section: #e6eff7;
+$color-stroke: #eaedee;
+
+// Type
+$font-body: "proxima-nova", sans-serif;
+$font-headings: "proxima-nova-condensed", sans-serif;
+
+// Convert PX to EMS function
+$browser-context: 18; // Has to be same as <body> font-size
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em
+}
+
+@mixin image-replacement {
+  text-indent: -9999px;
+  overflow: hidden;
+  display: block;
+}
+
+@mixin clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin disable-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* SELECTIONS
+--------------------------------------------- */
+
+::-moz-selection {
+  background: $color-lightblue;
+  color: $color-white;
+  text-shadow: none;
+}
+
+::selection {
+  background: $color-lightblue;
+  color: $color-white;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+/* RESET
+--------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  background: transparent;
+  border: 0;
+}
+
+img, embed, object, video { 
+  max-width: 100%;
+  height: inherit;
+  _width: 100%;
+}
+
+/* BASE
+--------------------------------------------- */
+
+.preload * {
+  @include transition(none !important);
+}
+
+html {
+  min-width: 230px;
+  background: $color-white;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.banner {
+  height: 400px;
+  background: $color-lightblue;
+}
+
+html,body {
+  height: 100%;
+}
+
+.wrapper {
+  @include clearfix;
+  position: relative;
+  margin: 1em auto;
+  width: 84%;
+}
+
+.section {
+  margin: 0 0 2em;
+}
+
+/* TYPOGRAPHY
+--------------------------------------------- */
+
+body {
+  font: 400 100%/1.5em $font-body;
+  color: $color-black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  -moz-font-feature-settings: "liga=1, kern=1";
+  -ms-font-feature-settings: "liga" 1, "kern" 1;
+  font-family: $font-headings;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 1.42382em;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+p {
+  margin-bottom: 1.5em;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  color: lighten($color-black, 15%);
+}
+
+b,strong {
+  font-weight: bold;
+}
+
+em,i {
+  font-style: italic;
+  font-weight: normal;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+sub, sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 65%;
+  line-height: 0;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+h2 {
+  margin-bottom: .35em;
+  line-height: 1.5em;
+  font-size: 1.25em;
+}
+
+h3 {
+  margin-bottom: 0.5em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin: .5em auto 1.5em auto;
+  display: block;
+}
+
+/*
+  LINKS
+--------------------------------------------- */
+
+a {
+  text-decoration: none;
+  color: darken($color-lightblue, 5%);
+  -webkit-tap-highlight-color: $color-lightblue;
+  @include transition(color .3s ease);
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
+
+  &:hover {
+    color: $color-blue;
+    outline: 0;
+  }
+
+  &:active {
+    outline: 0;
+    opacity: 0.6;
+    background: transparent;
+    outline: none;
+  }
+
+}
+
+.col a {
+  margin: 0.5em 0 0;
+  display: block;
+  white-space: nowrap;
+
+  &:after {
+    content: "\203A";
+    margin: 0 0 0 0.4em;
+  }
+
+}
+
+/*
+  TABLES
+--------------------------------------------- */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 3em;
+}
+
+td,th {
+  padding: 10px;
+
+  &:last-child {
+    border-right: 0;
+  }
+
+}
+
+tr {
+  padding: 0;
+  text-align: center;
+  background: rgba($color-white, 0.3);
+
+  &.alt {
+    background: darken($color-section, 3%);
+  }
+
+}
+
+th {
+  text-align: center;
+  background: darken($color-section, 8%);
+  font-family: $font-headings;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: .875em;
+  font-weight: 700;
+}
+
+th:first-child {
+  @include border-left-radius(3px);
+}
+
+th:last-child {
+  @include border-right-radius(3px);
+}
+
+@media screen and (max-width: 610px) {
+
+  .responsive_table table,
+  .responsive_table thead,
+  .responsive_table tbody,
+  .responsive_table th,
+  .responsive_table td,
+  .responsive_table tr {
+    display: block;
+  }
+
+  td,th {
+    padding: 3px;
+  }
+
+  .responsive_table {
+    font-size: .875em;
+
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+      white-space: normal;
+      text-align: left;
+    }
+
+    td:before {
+      position: absolute;
+      top: 3px;
+      left: 10px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      text-align: left;
+      font-weight: bold;
+      content: attr(data-title);
+    }
+
+  }
+
+  .tablefix {
+
+    thead tr {
+      position: relative;
+      top: auto;
+      left: auto;
+    }
+
+    th {
+      text-transform: none;
+      letter-spacing: 0;
+    }
+
+    .responsive_table table,
+    .responsive_table thead,
+    .responsive_table tbody,
+    .responsive_table th,
+    .responsive_table td,
+    .responsive_table tr {
+      display: inline;
+    }
+
+    td {
+      padding-left: 3px;
+    }
+
+    td:before {
+      display: none;
+    }
+
+  }
+
+}
+
+/*
+  HEADER
+--------------------------------------------- */
+
+.header {
+  position: relative;
+
+  .m_wrap {
+    position: relative;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  .wrapper {
+    margin: 0;
+    width: 100%;
+  }
+
+  img {
+    margin: 0;
+  }
+
+  .illustration {
+    margin: 55px 0 0;
+  }
+
+  h1 {
+    @include image-replacement;
+    margin: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+    text-shadow: 0 1px 2px rgba($color-black, .1);
+  }
+
+  h2 {
+    position: relative;
+    z-index: 1;
+    font: 300 112.5%/1.5em $font-body;
+    color: $color-white;
+    background: $color-blue;
+    text-shadow: 0 1px 2px rgba($color-black, .1);
+
+    span {
+      display: block;
+      padding: 3em 0 2em;
+      margin: 0 auto;
+      width: 84%;
+    }
+
+  }
+
+  .logo {
+    width: 90px;
+    height: 90px;
+    left: 50%;
+    margin-left: -45px;
+    position: absolute;
+    top: -45px;
+
+    &.sec {
+      display: none;
+    }
+
+  }
+
+  .button {
+    position: absolute;
+    z-index: 2;
+    bottom: -28px;
+    left: 50%;
+    margin-left: -42%;
+    width: 84%;
+    display: block;
+    text-align: center;
+    font-size: 125%;
+    font-family: $font-headings;
+    font-weight: 700;
+    color: $color-white;
+    @include border-radius(3px);
+    text-shadow: 0 -1px 0 rgba($color-black, .3);
+    background: $color-lightblue;
+    background: rgba($color-lightblue, .9);
+    @include transition(opacity .3s ease);
+    padding: .5em 0;
+
+    &:after {
+     content: "\2192";
+     top: 1px;
+     position: relative;
+     margin: 0 0 0 0.4em;
+    }
+
+    &:hover {
+      text-decoration: none;
+      border: 0;
+      opacity: 0.8;
+    }
+
+    &:active {
+      @include transition(none);
+      opacity: 0.6;
+    }
+
+  }
+
+}
+
+/*
+  CONTENT
+--------------------------------------------- */
+
+.section.about {
+  margin: 2em 0 0;
+
+  .col {
+    margin-bottom: 2em;
+  }
+
+}
+
+.section.devices {
+  padding: 1.2em 0 0;
+  background: $color-section;
+
+  h2 {
+    margin-bottom: 1em;
+  }
+
+}
+
+.loc_col_wrap {
+  float: left;
+  width: 90%;
+  background: lighten($color-stroke, 5%);
+  @include border-radius(3px);
+  border: 1px solid $color-stroke;
+  padding: 5%;
+  margin-bottom: 1.5em;
+  @include clearfix;
+
+  p {
+    margin: 0;
+  }
+
+}
+
+.location_col {
+  font-size: .875em;
+}
+
+.map img {
+  @include border-radius(3px);
+}
+
+.footer {
+  background: $color-stroke;
+  font-size: 87.5%;
+  text-align: center;
+  padding: 3em 0;
+
+  p {
+    margin: 0;
+  }
+
+}
+
+/*
+  IE6-8 FIXES
+--------------------------------------------- */
+
+.ie .wrapper,
+.ie .header h2,
+.ie .illustration {
+  width: 40em;
+  margin: 0 auto;
+}
+
+.ie .illustration {
+  margin-top: 4em;
+}
+
+.ie .wrapper {
+  overflow: hidden;
+}
+
+.ie .header .button {
+  top: 0;
+  height: 25px;
+}
+
+.ie .header h2 {
+  width: 32em;
+  padding: 2em;
+}
+
+.ie .section.devices {
+  background: $color-white;
+}
+
+/*
+  LARGE LAYOUT
+--------------------------------------------- */
+
+@media screen and (min-width: 42em) {
+
+  .col {
+    width: 30.3%;
+    margin-right: 4%;
+    float: left;
+    margin-bottom: 0;
+
+    &.col3 {
+      margin-right: 0;
+    }
+
+    a {
+      margin: 0;
+      display: inline;
+    }
+
+  }
+
+  .header {
+
+    .logo {
+      width: 110px;
+      height: 110px;
+      margin-left: -55px;
+    }
+
+  }
+
+  .section {
+    padding-bottom: 1em;
+  }
+
+  .section.about {
+    margin-top: 2.5em;
+  }
+
+  .section.location {
+    padding: 1.5em 0 1em;
+
+    img {
+      width: 50%;
+      float: right;
+    }
+
+    .location_info {
+      float: left;
+      width: 45%;
+    }
+
+    .location_col {
+      white-space: nowrap;
+      float: left;
+      width: 50%;
+      margin-right: 5%;
+    }
+
+    .location_col2 {
+      width: 45%;
+      margin-right: 0;
+    }
+
+  }
+
+  .section.devices {
+    padding: 2em 0 1.5em;
+    background: $color-section;
+
+    h2 {
+      margin-bottom: 1em;
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 56em) {
+
+  body {
+    // Firefox 3.6 fix
+    overflow-x: hidden;
+  }
+
+  h3 {
+    font-size: 1.25em;
+  }
+
+  .wrapper {
+    width: 78%;
+  }
+
+  .section.about {
+    padding-bottom: 2em;
+  }
+
+  .section.devices {
+    padding: 3.5em 0 3em;
+  }
+
+  .section.location {
+    padding: 2em 0;
+
+    .loc_col_wrap {
+      width: 39%;
+      padding: 3%;
+    }
+
+    .location_col {
+      width: 50%;
+      margin-right: 5%;
+    }
+
+    .location_col2 {
+      width: 45%;
+      margin-right: 0;
+    }
+
+  }
+
+  .header {
+    position: relative;
+
+    .wrapper {
+      position: static;
+      margin: 0 auto;
+      width: 86%;
+      overflow: visible;
+    }
+
+    .m_wrap {
+      position: static;
+    }
+
+    h1 {
+      text-indent: 0;
+      margin: .7em 0 0 .5em;
+      line-height: .8;
+      width: auto;
+      height: auto;
+      overflow: visible;
+      color: $color-white;
+      font-size: 1.5em;
+      float: left;
+
+      b {
+        color: $color-blue;
+        letter-spacing: -0.08em;
+        font: 300 100%/1 $font-body;
+        display: block;
+      }
+
+      i {
+        font-style: normal;
+        display: block;
+        margin: 0 0 0 .95em;
+      }
+
+    }
+
+    h2 {
+      position: absolute;
+      bottom: -6%;
+      right: 0;
+      margin: 0;
+      line-height: 1.6;
+      font-size: 1.25em;
+      padding: 4% 4% 4% 4%;
+      width: 54%;
+      @include transition(width .4s ease);
+      @include border-left-radius(3px);
+      background: rgba($color-blue, .9);
+      @include box-shadow(0 1px 5px rgba($color-black, .1));
+
+      span {
+        padding: 0;
+        margin: 0;
+      }
+
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin: 0;
+      left: auto;
+      display: none;
+      position: static;
+      float: left;
+
+      &.sec {
+        display: block;
+      }
+
+    }
+
+    .illustration {
+      margin: 0;
+    }
+
+    .nav {
+      width: 76.5%;
+      padding: 1.4% 0 1.4% 10.5%;
+      background: rgba($color-lightblue, .9);
+      @include border-bottom-right-radius(3px);
+      @include transition(width .4s ease);
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include box-shadow(0 1px 5px rgba($color-black, .1));
+    }
+
+    .button {
+      position: static;
+      margin: 2.2% 5% 0 0;
+      background: $color-blue;
+      width: 200px;
+      float: right;
+    }
+
+  }
+
+  .section.about {
+    margin-top: 5em;
+  }
+
+}
+
+@media screen and (min-width: 72em) {
+
+  .header {
+
+    .nav {
+      width: 64%;
+      padding: 1.4% 0 1.4% 11%;
+    }
+
+    h1 {
+      margin: .4em 0 0 .5em;
+      font-size: 1.75em;
+    }
+
+    h2 {
+      font-size: 1.375em;
+      width: 42%;
+      padding: 4% 5% 4% 4%;
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 85em) {
+
+  .wrapper {
+    width: 68%;
+  }
+
+  .header {
+
+    .wrapper {
+      width: 86%;
+    }
+
+    .nav {
+      width: 55%;
+      padding: 1.4% 0 1.4% 16%;
+    }
+
+    h2 {
+      width: 38%;
+      padding: 4% 9% 4% 4%;
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 102em) {
+
+  body {
+    font-size: 112.5%;
+  }
+
+  .wrapper {
+    width: 64%;
+  }
+
+  .header {
+    
+    .button {
+      margin: 1.8% 5% 0 0;
+    }
+
+    h1 {
+      margin-top: .3em;
+    }
+
+    .nav {
+      width: 50%;
+    }
+
+    h2 {
+      width: 33%;
+      bottom: -5%;
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 120em) {
+
+  body {
+    font-size: 125%;
+  }
+  
+  .header {
+
+    .button {
+      margin: 1.3% 5% 0 0;
+    }
+
+    h1 {
+      margin-top: .15em;
+    }
+
+    .nav {
+      width: 50%;
+    }
+
+    h2 {
+      width: 33%;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 18em) {
+
+  body {
+    font-size: 87.5%;
+  }
+
+  .header {
+
+    .logo {
+      width: 70px;
+      height: 70px;
+      margin-left: -35px;
+      top: -35px;
+    }
+
+    .illustration {
+      margin-top: 45px;
+    }
+
+  }
+
+  .responsive_table {
+    font-size: 12px;
+  }
+
+}
