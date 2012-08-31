@@ -8,7 +8,7 @@
 </Files>
 
 # Directory index and error document
-DirectoryIndex index.php
+DirectoryIndex index.html
 
 php_flag engine off
 
