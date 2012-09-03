@@ -577,7 +577,7 @@ th:last-child {
   background: $color-stroke;
   font-size: 87.5%;
   text-align: center;
-  padding: 3em 0;
+  padding: 2em 0;
 
   p {
     margin: 0;
@@ -698,6 +698,10 @@ th:last-child {
       margin-bottom: 1em;
     }
 
+  }
+
+  .footer {
+    padding: 3em 0;
   }
 
 }
