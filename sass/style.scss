@@ -343,11 +343,16 @@ th:last-child {
 
   .responsive_table {
     font-size: .875em;
+    line-height: 1.3;
 
     thead tr {
       position: absolute;
       top: -9999px;
       left: -9999px;
+    }
+    
+    tr {
+      padding: 6px;
     }
 
     td {
