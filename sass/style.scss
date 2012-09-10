@@ -12,7 +12,7 @@
 
   TITLE:    Styles for opendevicelab.com
   AUTHOR:   @viljamis + @kiskolabs
-  VERSION:  0.1
+  VERSION:  0.22
 
   MEMO FOR CONVERSIONS:
   75%       =   12px, percentage(12 / 16)
@@ -132,7 +132,7 @@ img, embed, object, video {
 }
 
 html {
-  min-width: 230px;
+  min-width: 223px;
   background: $color-white;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -802,7 +802,6 @@ th:last-child {
       font-size: 1.25em;
       padding: 4% 4% 4% 4%;
       width: 54%;
-      @include transition(width .4s ease);
       @include border-left-radius(3px);
       background: rgba($color-blue, .9);
       @include box-shadow(0 1px 5px rgba($color-black, .1));
@@ -838,7 +837,6 @@ th:last-child {
       padding: 1.4% 0 1.4% 10.5%;
       background: rgba($color-lightblue, .9);
       @include border-bottom-right-radius(3px);
-      @include transition(width .4s ease);
       position: absolute;
       top: 0;
       left: 0;
