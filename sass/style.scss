@@ -12,7 +12,7 @@
 
   TITLE:    Styles for opendevicelab.com
   AUTHOR:   @viljamis + @kiskolabs
-  VERSION:  0.22
+  VERSION:  0.23
 
   MEMO FOR CONVERSIONS:
   75%       =   12px, percentage(12 / 16)
@@ -302,7 +302,7 @@ tr {
   text-align: center;
   background: rgba($color-white, 0.3);
 
-  &.alt {
+  &:nth-child(even) {
     background: darken($color-section, 3%);
   }
 
