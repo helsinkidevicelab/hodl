@@ -1,6 +1,7 @@
 /*!
- *  opendevicelab.com
- *  (c) 2012 @viljamis
+ *  TITLE:    JavaScripts for opendevicelab.com
+ *  AUTHOR:   @viljamis
+ *  VERSION:  0.2
  */
 
 // Variables
