@@ -12,7 +12,7 @@
 
   TITLE:    Styles for opendevicelab.com
   AUTHOR:   @viljamis
-  VERSION:  0.24
+  VERSION:  0.25
 
   MEMO FOR CONVERSIONS:
   75%       =   12px, percentage(12 / 16)
@@ -33,10 +33,10 @@
 @import "compass/css3";
 
 // Colors
-$color-black: #333;
+$color-black: #222;
 $color-white: #fff;
-$color-blue: #155a9a;
-$color-lightblue: #29a4ea;
+$color-blue: #0b5498;
+$color-lightblue: #1a9ee9;
 $color-section: #e6eff7;
 $color-stroke: #eaedee;
 
@@ -463,7 +463,7 @@ th {
     line-height: 0;
     width: 0;
     height: 0;
-    text-shadow: 0 1px 2px rgba($color-black, .1);
+    //text-shadow: 0 1px 2px rgba($color-black, .1);
   }
 
   h2 {
@@ -472,7 +472,7 @@ th {
     font: 300 112.5%/1.5em $font-body;
     color: $color-white;
     background: $color-blue;
-    text-shadow: 0 1px 2px rgba($color-black, .1);
+    //text-shadow: 0 1px 2px rgba($color-black, .1);
 
     span {
       display: block;
@@ -511,7 +511,7 @@ th {
     font-weight: 700;
     color: $color-white;
     @include border-radius(3px);
-    text-shadow: 0 -1px 0 rgba($color-black, .3);
+    //text-shadow: 0 -1px 0 rgba($color-black, .3);
     background: $color-lightblue;
     background: rgba($color-lightblue, .9);
     @include transition(opacity .3s ease);
