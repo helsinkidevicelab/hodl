@@ -332,14 +332,15 @@ th {
   letter-spacing: 0.1em;
   font-size: .875em;
   font-weight: 700;
-}
 
-th:first-child {
-  @include border-left-radius(3px);
-}
+  &:first-child {
+    @include border-left-radius(3px);
+  }
 
-th:last-child {
-  @include border-right-radius(3px);
+  &:last-child {
+    @include border-right-radius(3px);
+  }
+
 }
 
 @media screen and (max-width: 610px) {
