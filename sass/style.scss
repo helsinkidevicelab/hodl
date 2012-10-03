@@ -288,6 +288,22 @@ table {
   margin: 0 0 3em;
 }
 
+.sortable thead {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  .sorttable_sorted,
+  .sorttable_sorted_reverse,
+  th:hover {
+    cursor: pointer;
+    background: darken($color-section, 12%);
+  }
+
+}
+
 td,th {
   padding: 10px;
 
@@ -350,7 +366,7 @@ th:last-child {
       top: -9999px;
       left: -9999px;
     }
-    
+
     tr {
       padding: 6px;
     }
@@ -985,7 +1001,8 @@ th:last-child {
 @media screen and (max-width: 18em) {
 
   body {
-    font-size: 87.5%;
+    font-size: 75%;
+    line-height: 1.4em;
   }
 
   .header {
