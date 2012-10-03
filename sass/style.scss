@@ -11,8 +11,8 @@
   __________\///__________\////////////________
 
   TITLE:    Styles for opendevicelab.com
-  AUTHOR:   @viljamis + @kiskolabs
-  VERSION:  0.23
+  AUTHOR:   @viljamis
+  VERSION:  0.24
 
   MEMO FOR CONVERSIONS:
   75%       =   12px, percentage(12 / 16)
@@ -69,7 +69,7 @@ $browser-context: 18; // Has to be same as <body> font-size
 }
 
 @mixin disable-select {
-  -webkit-touch-callout: none;
+  //-webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -289,11 +289,7 @@ table {
 }
 
 .sortable thead {
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  @include disable-select;
 
   .sorttable_sorted,
   .sorttable_sorted_reverse,
