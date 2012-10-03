@@ -1,6 +1,8 @@
 /*!
- *  opendevicelab.com
- *  (c) 2012 @viljamis
+ *  TITLE:    JavaScripts for opendevicelab.com
+ *  SOURCE:   http://opendevicelab.com/js/scripts.js
+ *  AUTHOR:   @viljamis
+ *  VERSION:  0.2
  */
 
 var docElement=document.documentElement,browserUA=navigator.userAgent.toLowerCase();docElement.className=docElement.className.replace(/(^|\s)no-js preload(\s|$)/,"$1$2");if(-1<browserUA.search("windows phone os 7")||-1<browserUA.search("windows phone os 8")||-1<browserUA.search("msie 9.0"))docElement.className+=" tablefix";

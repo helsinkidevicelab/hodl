@@ -46,9 +46,6 @@ if ((browserUA.search('windows phone os 7') > -1) ||
 
 })(document);
 
-
-
-
 /*
   SortTable
   version 2
