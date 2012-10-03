@@ -319,7 +319,7 @@ tr {
   background: rgba($color-white, 0.3);
 
   &:nth-child(even) {
-    background: darken($color-section, 3%);
+    background: darken($color-section, 2%);
   }
 
 }
@@ -819,7 +819,7 @@ th:last-child {
       padding: 4% 4% 4% 4%;
       width: 54%;
       @include border-left-radius(3px);
-      background: rgba($color-blue, .9);
+      background: rgba($color-blue, .92);
       @include box-shadow(0 1px 5px rgba($color-black, .1));
 
       span {
@@ -851,7 +851,7 @@ th:last-child {
     .nav {
       width: 76.5%;
       padding: 1.4% 0 1.4% 10.5%;
-      background: rgba($color-lightblue, .9);
+      background: rgba($color-lightblue, .92);
       @include border-bottom-right-radius(3px);
       position: absolute;
       top: 0;
