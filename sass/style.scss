@@ -251,7 +251,7 @@ img {
 a {
   text-decoration: none;
   color: darken($color-lightblue, 5%);
-  -webkit-tap-highlight-color: $color-lightblue;
+  //-webkit-tap-highlight-color: $color-lightblue;
   @include transition(color .3s ease);
   -webkit-hyphens: none;
   -moz-hyphens: none;
