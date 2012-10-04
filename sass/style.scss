@@ -621,6 +621,7 @@ th {
   font-size: percentage(14 / 16);
   line-height: 1.6;
   padding: 1.5em 2em;
+  margin: 0 0 3em;
   @include box-shadow(0 0 0 1px darken($color-section, 4%));
   
   code {
