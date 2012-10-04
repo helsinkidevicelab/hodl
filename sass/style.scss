@@ -309,6 +309,7 @@ table {
 
 td,th {
   padding: 10px;
+  border-right: 1px solid darken($color-section, 5%);
 
   &:last-child {
     border-right: 0;
