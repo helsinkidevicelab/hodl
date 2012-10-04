@@ -77,6 +77,12 @@ $browser-context: 18; // Has to be same as <body> font-size
   user-select: none;
 }
 
+@mixin box-sizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /* SELECTIONS
 --------------------------------------------- */
 
@@ -459,6 +465,7 @@ th {
 
   h1 {
     @include image-replacement;
+    @include disable-select;
     margin: 0;
     line-height: 0;
     width: 0;
@@ -510,6 +517,7 @@ th {
     font-family: $font-headings;
     font-weight: 700;
     color: $color-white;
+    @include disable-select;
     @include border-radius(3px);
     //text-shadow: 0 -1px 0 rgba($color-black, .3);
     background: $color-lightblue;
@@ -565,7 +573,7 @@ th {
 .loc_col_wrap {
   float: left;
   width: 90%;
-  background: lighten($color-stroke, 5%);
+  background: lighten($color-stroke, 6%);
   @include border-radius(3px);
   border: 1px solid $color-stroke;
   padding: 5%;
@@ -582,18 +590,30 @@ th {
   font-size: .875em;
 }
 
-.map img {
-  @include border-radius(3px);
+.map {
+
+  img {
+    @include border-radius(3px);
+    @include transition(all .162s ease-in-out);
+    background: #fff;
+  }
+
+  &:hover img {
+    @include transform(scale(1.032) translate3d(0,0,0));
+  }
+
 }
 
 .footer {
-  background: $color-stroke;
+  background: lighten($color-stroke, 2%);
+  @include background-image(linear-gradient(lighten($color-stroke, 1%), #fff));
   font-size: 87.5%;
   text-align: center;
   padding: 2em 0;
 
   p {
     margin: 0;
+    color: lighten($color-black, 35%);
   }
 
 }
@@ -842,7 +862,7 @@ th {
     }
 
     .illustration {
-      margin: 0;
+      margin: 0; 
     }
 
     .nav {
@@ -862,6 +882,17 @@ th {
       background: $color-blue;
       width: 200px;
       float: right;
+      @include transition(all .3s ease);
+
+      &:hover {
+        margin-right: 4.5%;
+        opacity: 1;
+      }
+
+      &:active {
+        opacity: .8;
+      }
+
     }
 
   }
