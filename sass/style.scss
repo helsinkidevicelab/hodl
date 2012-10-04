@@ -628,6 +628,7 @@ th {
     font-family: monospace, monospace;
     background: $color-section;
     @include border-radius(3px);
+    font-size: .875em;
     padding: 0 .3em;
     @include box-shadow(0 0 0 1px darken($color-section, 10%))
   }
