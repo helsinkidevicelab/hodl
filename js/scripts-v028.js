@@ -2,8 +2,11 @@
  *  TITLE:    JavaScripts for opendevicelab.com
  *  SOURCE:   http://opendevicelab.com/js/scripts.js
  *  AUTHOR:   @viljamis
- *  VERSION:  0.4
- */
+ *  VERSION:  0.28
+ *  + Responsive Images, copyright 2011, Scott Jehl, Filament Group, Inc
+*/
+
+(function(g){var k=g.rwd_images||{},d=k.widthBreakPoint||480,h="rwd-imgs-lrg",f=g.screen.availWidth>d,e=location.href,l=e.substring(0,e.lastIndexOf("/"))+"/",m=g.document,j=m.getElementsByTagName("head")[0],c=new Date();c.setTime(c.getTime()+(5*1000));m.cookie="rwd-resolution="+screen.width+";expires="+c.toGMTString()+"; path=/";if(!f){return}m.documentElement.className+=" "+h;var b=(function(){var r,q=false,p=m.createElement("a"),o=false,s=j.getElementsByTagName("base")[0]||(function(){q=true;return j.insertBefore(m.createElement("base"),j.firstChild)})();r=!q&&s.href;s.href=location.protocol+"//x/";p.href="y";if(p.href.indexOf("x/y")<0){if(r){s.href=r}else{j.removeChild(s)}s=null}else{s.href=l+"rwd-router/"}return s})(),n=function(){for(var r=0,t=m.getElementsByTagName("img"),p=t.length;r<p;r++){var o=t[r],s=o.getAttribute("src"),q=s.match(/(\?|&)full=(.*)&?/)&&RegExp.$2;if(q){o.src=q}}},a=false,i=function(){if(a){return}a=true;if(!b){n()}else{j.removeChild(b)}};if(m.addEventListener){g.addEventListener("load",i,false)}else{if(m.attachEvent){g.attachEvent("onload",i)}}})(this);
 
 var docElement=document.documentElement,browserUA=navigator.userAgent.toLowerCase();docElement.className=docElement.className.replace(/(^|\s)no-js preload(\s|$)/,"$1$2");if(-1<browserUA.search("windows phone os 7")||-1<browserUA.search("windows phone os 8")||-1<browserUA.search("msie 9.0")||-1<browserUA.search("msie 10.0"))docElement.className+=" tablefix";
 (function(a){window.VS=window.VS||{};VS.viewportmeta=a.querySelector&&a.querySelector('meta[name="viewport"]');VS.ua=navigator.userAgent;VS.scaleFix=function(){VS.viewportmeta&&(/iPhone|iPad|iPod/.test(VS.ua)&&!/Opera Mini/.test(VS.ua))&&(VS.viewportmeta.content="width=device-width, minimum-scale=1.0, maximum-scale=1.0",a.addEventListener("gesturestart",VS.gestureStart,!1))};VS.gestureStart=function(){VS.viewportmeta.content="width=device-width, minimum-scale=0.25, maximum-scale=1.9"};VS.hideUrlBar=

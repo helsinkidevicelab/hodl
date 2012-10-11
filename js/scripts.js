@@ -1,7 +1,7 @@
 /*!
  *  TITLE:    JavaScripts for opendevicelab.com
  *  AUTHOR:   @viljamis
- *  VERSION:  0.4
+ *  VERSION:  0.28
  */
 
 // Variables
