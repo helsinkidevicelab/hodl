@@ -14,7 +14,8 @@ docElement.className = docElement.className.replace(/(^|\s)no-js preload(\s|$)/,
 // If Windows Mobile 7x, 8x or Explorer 9
 if ((browserUA.search('windows phone os 7') > -1) || 
 (browserUA.search('windows phone os 8') > -1) || 
-(browserUA.search('msie 9.0') > -1)) {
+(browserUA.search('msie 9.0') > -1) || 
+(browserUA.search('msie 10.0') > -1)) {
   docElement.className = docElement.className + ' tablefix';
 }
 
@@ -46,6 +47,121 @@ if ((browserUA.search('windows phone os 7') > -1) ||
   };
 
 })(document);
+
+
+// Get current position
+function currentYPosition() {
+  // Firefox, Chrome, Opera, Safari
+  if (self.pageYOffset) {
+    return self.pageYOffset;
+  }
+
+  // Internet Explorer 6 - standards mode
+  if (document.documentElement && document.documentElement.scrollTop) {
+    return document.documentElement.scrollTop;
+  }
+
+  // Internet Explorer 6, 7 and 8
+  if (document.body.scrollTop) {
+    return document.body.scrollTop;
+  }
+
+  return 0;
+}
+
+// Get current element position
+function elmYPosition(eID) {
+  var elm = document.getElementById(eID),
+    y = elm.offsetTop,
+    node = elm;
+
+  while (node.offsetParent && node.offsetParent !== document.body) {
+    node = node.offsetParent;
+    y += node.offsetTop;
+  }
+
+  return y;
+}
+
+// Scrolling
+// http://www.itnewb.com/tutorial/Creating-the-Smooth-Scroll-Effect-with-JavaScript
+
+
+function smoothScroll(eID) {
+  var startY = currentYPosition(),
+    stopY = elmYPosition(eID),
+    distance = stopY > startY ? stopY - startY : startY - stopY,
+    speed = Math.round(distance / 100),
+    step = Math.round(distance / 25),
+    leapY = stopY > startY ? startY + step : startY - step,
+    timer = 0,
+    i;
+
+  if (distance < 100) {
+    scrollTo(0, stopY);
+    return;
+  }
+
+  if (speed >= 20) {
+    speed = 20;
+  }
+
+  if (stopY > startY) {
+    for (i = startY; i < stopY; i += step) {
+      setTimeout('window.scrollTo(0, ' + leapY + ')', timer * speed);
+      leapY += step;
+      if (leapY > stopY) {
+        leapY = stopY;
+      }
+      timer++;
+    }
+    return;
+  }
+
+  for (i = startY; i > stopY; i -= step) {
+    setTimeout('window.scrollTo(0, ' + leapY + ')', timer * speed);
+    leapY -= step;
+    if (leapY < stopY) {
+      leapY = stopY;
+    }
+    timer++;
+  }
+}
+
+// Variables
+var resizeTimer = null,
+  linkEl = document.getElementById('to_location');
+
+// Init function
+function initEvent() {
+  // Don't run on small screen
+  if (window.innerWidth > 670) {
+    // Handle the click event
+    linkEl.onclick = function () {
+      smoothScroll('location');
+      return false;
+    };
+  } else {
+    linkEl.onclick = function () {
+      return;
+    };
+  }
+}
+
+// Initialize event listeners
+initEvent();
+
+// Check for resize and init again when needed
+window.onresize = function () {
+  if (resizeTimer) {
+    clearTimeout(resizeTimer);
+  }
+  resizeTimer = setTimeout(function () {
+    // console.log("Window was resized");
+    resizeTimer = null;
+    initEvent();
+  }, 200);
+};
 
 /*
   SortTable
