@@ -12,7 +12,7 @@
 
   TITLE:    Styles for opendevicelab.com
   AUTHOR:   @viljamis
-  VERSION:  0.27
+  VERSION:  0.28
 
   MEMO FOR CONVERSIONS:
   75%       =   12px, percentage(12 / 16)
@@ -709,6 +709,22 @@ th {
       margin-left: -55px;
     }
 
+    h2 span {
+      padding: 2.5em 0 2.5em;
+      width: 52%;
+      margin-left: 8%;
+    }
+
+    .button {
+      margin-left: -33%;
+      position: absolute;
+      z-index: 2;
+      bottom: -110px;
+      right: 8%;
+      margin-left: auto;
+      width: 27%;
+    }
+
   }
 
   .section {
@@ -869,6 +885,7 @@ th {
       span {
         padding: 0;
         margin: 0;
+        width: 84%;
       }
 
     }
