@@ -1,7 +1,7 @@
 /*!
  *  TITLE:    JavaScripts for opendevicelab.com
  *  AUTHOR:   @viljamis
- *  VERSION:  0.2
+ *  VERSION:  0.4
  */
 
 // Variables
@@ -11,7 +11,7 @@ var docElement = document.documentElement,
 // Remove "preload" and "no-js" classes from <html> element
 docElement.className = docElement.className.replace(/(^|\s)no-js preload(\s|$)/, '$1$2');
 
-// If Windows Mobile 7x, 8x or Explorer 9
+// If Windows Mobile 7x, 8x or Explorer 9x, 10x
 if ((browserUA.search('windows phone os 7') > -1) || 
 (browserUA.search('windows phone os 8') > -1) || 
 (browserUA.search('msie 9.0') > -1) || 
@@ -84,9 +84,6 @@ function elmYPosition(eID) {
 }
 
 // Scrolling
-// http://www.itnewb.com/tutorial/Creating-the-Smooth-Scroll-Effect-with-JavaScript
-
-
 function smoothScroll(eID) {
   var startY = currentYPosition(),
     stopY = elmYPosition(eID),
@@ -148,7 +145,7 @@ function initEvent() {
   }
 }
 
-// Initialize event listeners
+// Initialize event
 initEvent();
 
 // Check for resize and init again when needed
@@ -163,24 +160,7 @@ window.onresize = function () {
   }, 200);
 };
 
-/*
-  SortTable
-  version 2
-  7th April 2007
-  Stuart Langridge, http://www.kryogenix.org/code/browser/sorttable/
-  
-  Instructions:
-  Download this file
-  Add <script src="sorttable.js"></script> to your HTML
-  Add class="sortable" to any table you'd like to make sortable
-  Click on the headers to sort
-  
-  Thanks to many, many people for contributions and suggestions.
-  Licenced as X11: http://www.kryogenix.org/code/browser/licence.html
-  This basically means: do what you want with it.
-*/
-
- 
+// SortTable, version 2, 7th April 2007, Stuart Langridge
 var stIsIE = /*@cc_on!@*/false;
 
 sorttable = {
