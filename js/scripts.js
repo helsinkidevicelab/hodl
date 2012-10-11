@@ -92,7 +92,7 @@ function smoothScroll(eID) {
     stopY = elmYPosition(eID),
     distance = stopY > startY ? stopY - startY : startY - stopY,
     speed = Math.round(distance / 100),
-    step = Math.round(distance / 25),
+    step = Math.round(distance / 35),
     leapY = stopY > startY ? startY + step : startY - step,
     timer = 0,
     i;
