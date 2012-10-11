@@ -24,7 +24,7 @@ RewriteRule ^(.*)$ http://opendevicelab.com/$1 [R=301,L]
 
 # direct image requests to temp
 RewriteCond %{QUERY_STRING} full=(.*)&?
-RewriteRule (.*)rwd-router/.*\.(jpe?g|png|gif|webp) $1%1 [L]
+RewriteRule (.*)rwd-router/.*\.(jpg) $1%1 [L]
 # ignore trap for non-image requests, rewrite URL without trap segment
 RewriteRule (.*)rwd-router/(.*)$ $1$2
 # //End Responsive Images
