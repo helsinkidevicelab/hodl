@@ -7,10 +7,6 @@
   deny from all
 </Files>
 
-#LoadModule expires_module modules/mod_expires.so
-#LoadModule headers_module modules/mod_headers.so
-#LoadModule deflate_module modules/mod_deflate.so
-
 # Directory index and error document
 DirectoryIndex index.html
 
