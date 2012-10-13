@@ -12,7 +12,7 @@
 
   TITLE:    Styles for opendevicelab.com
   AUTHOR:   @viljamis
-  VERSION:  0.28
+  VERSION:  0.29
 
   MEMO FOR CONVERSIONS:
   75%       =   12px, percentage(12 / 16)
@@ -683,6 +683,11 @@ th {
   .illustration {
     min-height: 300px;
   }
+  
+  
+  .wrapper {
+    width: 90%;
+  }
 
   .col {
     width: 30.3%;
@@ -711,8 +716,8 @@ th {
 
     h2 span {
       padding: 2.5em 0 2.5em;
-      width: 52%;
-      margin-left: 8%;
+      width: 56%;
+      margin-left: 5%;
     }
 
     .button {
@@ -720,7 +725,7 @@ th {
       position: absolute;
       z-index: 2;
       bottom: -110px;
-      right: 8%;
+      right: 6%;
       margin-left: auto;
       width: 27%;
     }
@@ -782,7 +787,7 @@ th {
 
 }
 
-@media screen and (min-width: 58em) {
+@media screen and (min-width: 56em) {
 
   .illustration {
     min-height: 400px;
@@ -795,10 +800,6 @@ th {
 
   h3 {
     font-size: 1.25em;
-  }
-
-  .wrapper {
-    width: 78%;
   }
 
   .section.about {
@@ -876,8 +877,8 @@ th {
       margin: 0;
       line-height: 1.6;
       font-size: 1.25em;
-      padding: 4% 4% 4% 4%;
-      width: 54%;
+      padding: 4% 0 4% 4%;
+      width: 48%;
       @include border-left-radius(3px);
       background: rgba($color-blue, .92);
       @include box-shadow(0 1px 5px rgba($color-black, .1));
@@ -910,8 +911,8 @@ th {
     }
 
     .nav {
-      width: 76.5%;
-      padding: 1.4% 0 1.4% 10.5%;
+      width: 70.5%;
+      padding: 1.4% 0 1.4% 4.5%;
       background: rgba($color-lightblue, .92);
       @include border-bottom-right-radius(3px);
       position: absolute;
@@ -952,8 +953,17 @@ th {
   .illustration {
     min-height: 500px;
   }
+  
+  
+  .wrapper {
+    width: 78%;
+  }
 
   .header {
+
+    .wrapper {
+      width: 86%;
+    }
 
     .nav {
       width: 64%;

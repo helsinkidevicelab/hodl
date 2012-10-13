@@ -10,7 +10,7 @@
 # Directory index and error document
 DirectoryIndex index.html
 
-php_flag engine off
+# php_flag engine off
 
 # Responsive Images 
 # Mobile-First images that scale responsively and responsibly
