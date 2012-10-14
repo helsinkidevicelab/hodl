@@ -1,0 +1,12 @@
+# Apache configuration file
+# httpd.apache.org/docs/2.2/mod/quickreference.html
+# Techniques in here adapted from all over, 
+#   including Kroc Camen: camendesign.com/.htaccess
+<Files .htaccess>
+  order allow,deny
+  deny from all
+</Files>
+
+
+# Directory index and error document
+DirectoryIndex /404/index.php
