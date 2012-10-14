@@ -1,20 +1,9 @@
 <?php
+$page_title = "Helsinki Open Device Lab";
+$page_description = "Helsinki open device lab is established to help the local web developer community to be able to test their work on the ever-growing range of mobile devices";
 
-
+include("includes/header.php");
 ?>
-<!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js preload ie" lang="en"><![endif]-->
-<!--[if gte IE 9]><!--><html class="no-js preload" lang="en"><!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <title>Helsinki Open Device Lab</title>
-    <meta name="author" content="@viljamis">
-    <meta name="description" content="Helsinki open device lab is established to help the local web developer community to be able to test their work on the ever-growing range of mobile devices">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style-v029.css">
-    <script src="js/images.js"></script>
-    <script src="//use.typekit.net/vhc5ixw.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
   </head>
   <body>
     <div class="header">
@@ -331,24 +320,6 @@
         </div>
       </div>
     </div>
-    <div class="footer">
-      <p>&copy; 2012 Helsinki Open Device Lab.</p>
-    </div>
-    <script src="js/scripts-v028.js"></script>
-    <script>
-      // iOS fixes
-      VS.scaleFix();
-      VS.hideUrlBar();
-    </script>
-    <script>
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-34490222-1']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
+    <?php include("includes/footer.php"); ?>
   </body>
 </html>
