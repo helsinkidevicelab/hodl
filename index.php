@@ -64,7 +64,7 @@
               <td data-title="Device">Amazon Kindle keyboard</td>
               <td data-title="OS">Kindle 3.3</td>
               <td data-customkey="30" data-title="Screen Size">600&nbsp;x&nbsp;706</td>
-              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami Salminen</a></td>
+              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami S.</a></td>
             </tr>
             <tr>
               <td data-title="Device">Amazon Kindle Fire</td>
@@ -82,7 +82,7 @@
               <td data-title="Device">Apple iPod Touch 2G</td>
               <td data-title="OS">iOS 4.2.1</td>
               <td data-customkey="15" data-title="Screen Size">320&nbsp;x&nbsp;480</td>
-              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami Salminen</a></td>
+              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami S.</a></td>
             </tr>
             <tr>
               <td data-title="Device">Apple iPhone 3G</td>
@@ -94,19 +94,19 @@
               <td data-title="Device">Apple iPhone 3GS</td>
               <td data-title="OS">iOS 4.3.3</td>
               <td data-customkey="16" data-title="Screen Size">320&nbsp;x&nbsp;480</td>
-              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami Salminen</a></td>
+              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami S.</a></td>
             </tr>
             <tr>
               <td data-title="Device">Apple iPhone 4</td>
               <td data-title="OS">iOS 6</td>
               <td data-customkey="17" data-title="Screen Size">320&nbsp;x&nbsp;480 @2x</td>
-              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami Salminen</a></td>
+              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami S.</a></td>
             </tr>
             <tr>
               <td data-title="Device">Apple iPad 1G</td>
               <td data-title="OS">iOS 5.1.1</td>
               <td data-customkey="34" data-title="Screen Size">768&nbsp;x&nbsp;1024</td>
-              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami Salminen</a></td>
+              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami S.</a></td>
             </tr>
             <tr>
               <td data-title="Device">Apple iPad 3G</td>
@@ -142,7 +142,7 @@
               <td data-title="Device">Fujitsu Amilo</td>
               <td data-title="OS">Windows XP</td>
               <td data-customkey="38" data-title="Screen Size">1024&nbsp;x&nbsp;768</td>
-              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami Salminen</a></td>
+              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami S.</a></td>
             </tr>
             <tr>
               <td data-title="Device">Google Nexus 7</td>
@@ -232,19 +232,19 @@
               <td data-title="Device">Nokia 500</td>
               <td data-title="OS">Symbian Belle</td>
               <td data-customkey="25" data-title="Screen Size">360&nbsp;x&nbsp;640 @1.25x</td>
-              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami Salminen</a></td>
+              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami S.</a></td>
             </tr>
             <tr>
               <td data-title="Device">Nokia N95</td>
               <td data-title="OS">Symbian 9.2, S60</td>
               <td data-customkey="2" data-title="Screen Size">240&nbsp;x&nbsp;320</td>
-              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami Salminen</a></td>
+              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami S.</a></td>
             </tr>
             <tr>
               <td data-title="Device">Nokia 2700</td>
               <td data-title="OS">S40 5th Edition</td>
               <td data-customkey="3" data-title="Screen Size">240&nbsp;x&nbsp;320</td>
-              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami Salminen</a></td>
+              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami S.</a></td>
             </tr>
             <tr>
               <td data-title="Device">Nokia E50</td>
@@ -256,7 +256,7 @@
               <td data-title="Device">Nokia E61i</td>
               <td data-title="OS">Symbian 9.1, S60</td>
               <td data-customkey="12" data-title="Screen Size">320&nbsp;x&nbsp;240</td>
-              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami Salminen</a></td>
+              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami S.</a></td>
             </tr>
             <tr>
               <td data-title="Device">Nokia E61i</td>
