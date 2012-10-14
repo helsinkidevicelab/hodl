@@ -14,10 +14,10 @@ include($_SERVER["DOCUMENT_ROOT"]."/includes/header.php");
           <div class="nav">
             <img src="img/logo_packed.png" class="logo sec" alt="Logo">
             <h1><b>Helsinki</b> <i>open device lab</i></h1>
-            <a href="http://opendevicelab.com/" class="button">Go to frontpage</a>
+            <a href="http://opendevicelab.com/" class="button">Go to front page</a>
           </div>
         </div>
-        <h2><span>404 Error. The page you've requested cannot be found.</span></h2>
+        <h2><span>404 Error. The page you've requested cannot be found. Go to <a href="http://opendevicelab.com/">front page</a> or try checking the URL for errors, and then hit the refresh button on your browser.</span></h2>
       </div>
     </div>
     <div class="section about">
