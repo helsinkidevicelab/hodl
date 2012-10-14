@@ -319,10 +319,10 @@ td,th {
 
 tr {
   padding: 0;
-  background: rgba($color-white, 0.35);
+  background: rgba($color-white, 0.5);
 
   &:nth-child(even) {
-    background: darken($color-section, 3%);
+    background: darken($color-section, 2%);
   }
 
 }
@@ -576,9 +576,9 @@ th {
 .loc_col_wrap {
   float: left;
   width: 90%;
-  background: lighten($color-stroke, 5%);
+  background: lighten($color-stroke, 4%);
   @include border-radius(3px);
-  border: 1px solid darken($color-stroke, 1%);
+  border: 1px solid darken($color-stroke, 2%);
   padding: 5%;
   margin-bottom: 1.5em;
   @include clearfix;
