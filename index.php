@@ -315,7 +315,7 @@ include("includes/header.php");
               00180 Helsinki, FI</p>
           </div>
           <div class="location_col location_col2">
-            <p><a href="http://twitter.com/viljamis" rel="external">Tweet to @viljamis</a><br><a href="mailto:info@opendevicelab.com">info@opendevicelab.com</a></p>
+            <p><a href="http://twitter.com/viljamis" rel="external">Tweet to @viljamis</a><br><a href="mailto:me@viljamis.com">me@viljamis.com</a></p>
           </div>
         </div>
       </div>
