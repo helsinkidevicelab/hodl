@@ -182,6 +182,12 @@ include("includes/header.php");
               <td data-title="Contributor"><a href="http://twitter.com/kiskolabs" rel="external">Kisko Labs</a></td>
             </tr>
             <tr>
+              <td data-title="Device">Nintendo Game Boy</td>
+              <td data-title="OS">Game Boy OS</td>
+              <td data-customkey="1" data-title="Screen Size">160&nbsp;x&nbsp;144</td>
+              <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami S.</a></td>
+            </tr>
+            <tr>
               <td data-title="Device">Nokia Lumia 800</td>
               <td data-title="OS">Windows Phone 7.5</td>
               <td data-customkey="28" data-title="Screen Size">480&nbsp;x&nbsp;800</td>
