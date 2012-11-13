@@ -104,6 +104,12 @@ include("includes/header.php");
               <td data-title="Contributor"><a href="http://twitter.com/kiskolabs" rel="external">Kisko Labs</a></td>
             </tr>
             <tr>
+              <td data-title="Device">Apple Macbook Pro</td>
+              <td data-title="OS">OS X 10.7.5</td>
+              <td data-customkey="39" data-title="Screen Size">1920&nbsp;x&nbsp;1200</td>
+              <td data-title="Contributor"><a href="http://twitter.com/kiskolabs" rel="external">Kisko Labs</a></td>
+            </tr>
+            <tr>
               <td data-title="Device">Blackberry Torch 9810</td>
               <td data-title="OS">BB OS 7.0</td>
               <td data-customkey="27" data-title="Screen Size">480&nbsp;x&nbsp;640</td>
