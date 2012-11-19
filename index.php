@@ -58,7 +58,7 @@ include("includes/header.php");
             <tr>
               <td data-title="Device">Amazon Kindle Fire</td>
               <td data-title="OS">Android 2.3</td>
-              <td data-customkey="37" data-title="Screen Size">800&nbsp;x&nbsp;1092 / 1024&nbsp;x&nbsp;395</td>
+              <td data-customkey="37" data-title="Screen Size">600&nbsp;x&nbsp;819 / 1024&nbsp;x&nbsp;395</td>
               <td data-title="Contributor"><a href="http://twitter.com/kiskolabs" rel="external">Kisko Labs</a></td>
             </tr>
             <tr>
@@ -92,6 +92,12 @@ include("includes/header.php");
               <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami S.</a></td>
             </tr>
             <tr>
+              <td data-title="Device">Apple iPhone 5</td>
+              <td data-title="OS">iOS 6.0.1</td>
+              <td data-customkey="18" data-title="Screen Size">320&nbsp;x&nbsp;568 @2x</td>
+              <td data-title="Contributor">N/A</td>
+            </tr>
+            <tr>
               <td data-title="Device">Apple iPad 1G</td>
               <td data-title="OS">iOS 5.1.1</td>
               <td data-customkey="34" data-title="Screen Size">768&nbsp;x&nbsp;1024</td>
@@ -106,7 +112,7 @@ include("includes/header.php");
             <tr>
               <td data-title="Device">Apple Macbook Pro</td>
               <td data-title="OS">OS X 10.7.5</td>
-              <td data-customkey="39" data-title="Screen Size">1920&nbsp;x&nbsp;1200</td>
+              <td data-customkey="40" data-title="Screen Size">1920&nbsp;x&nbsp;1200</td>
               <td data-title="Contributor"><a href="http://twitter.com/kiskolabs" rel="external">Kisko Labs</a></td>
             </tr>
             <tr>
@@ -141,14 +147,14 @@ include("includes/header.php");
             </tr>
             <tr>
               <td data-title="Device">Google Nexus 7</td>
-              <td data-title="OS">Android 4.1.2</td>
-              <td data-customkey="37" data-title="Screen Size">800&nbsp;x&nbsp;1205 / 1280&nbsp;x&nbsp;736 @1.325x</td>
+              <td data-title="OS">Android 4.2</td>
+              <td data-customkey="37" data-title="Screen Size">800&nbsp;x&nbsp;1205 @1.331x</td>
               <td data-title="Contributor"><a href="http://developers.google.com" rel="external">Google</a></td>
             </tr>
             <tr>
               <td data-title="Device">HP Veer</td>
               <td data-title="OS">webOS 2.1.2</td>
-              <td data-customkey="18" data-title="Screen Size">320 x 480</td>
+              <td data-customkey="18" data-title="Screen Size">320&nbsp;x&nbsp;480</td>
               <td data-title="Contributor"><a href="http://www.hpwebos.com/us/" rel="external">HP</a></td>
             </tr>
             <tr>
@@ -178,13 +184,13 @@ include("includes/header.php");
             <tr>
               <td data-title="Device">HTC Desire HD</td>
               <td data-title="OS">Android 2.3.5</td>
-              <td data-customkey="26" data-title="Screen Size">369&nbsp;x&nbsp;546 / 615&nbsp;x&nbsp;300 @1.5x</td>
+              <td data-customkey="26" data-title="Screen Size">369&nbsp;x&nbsp;546 @1.5x</td>
               <td data-title="Contributor"><a href="http://twitter.com/apeisa" rel="external">Antti Peisa</a></td>
             </tr>
             <tr>
               <td data-title="Device">Huawei U8650</td>
               <td data-title="OS">Android 2.3.3</td>
-              <td data-customkey="22" data-title="Screen Size">320&nbsp;x&nbsp;455 / 480&nbsp;x&nbsp;295</td>
+              <td data-customkey="22" data-title="Screen Size">320&nbsp;x&nbsp;401</td>
               <td data-title="Contributor"><a href="http://twitter.com/kiskolabs" rel="external">Kisko Labs</a></td>
             </tr>
             <tr>
@@ -226,7 +232,7 @@ include("includes/header.php");
             <tr>
               <td data-title="Device">Nokia Asha 306</td>
               <td data-title="OS">S40 Asha</td>
-              <td data-customkey="11" data-title="Screen Size">240&nbsp;x&nbsp;400<!--1280&nbsp;x&nbsp;1024--></td>
+              <td data-customkey="39" data-title="Screen Size">1280&nbsp;x&nbsp;1024</td>
               <td data-title="Contributor"><a href="http://www.developer.nokia.com" rel="external">Nokia</a></td>
             </tr>
             <tr>
