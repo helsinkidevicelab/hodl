@@ -12,7 +12,7 @@
 
   TITLE:    Styles for opendevicelab.com
   AUTHOR:   @viljamis
-  VERSION:  0.29
+  VERSION:  0.30
 
   MEMO FOR CONVERSIONS:
   75%       =   12px, percentage(12 / 16)
@@ -629,7 +629,7 @@ th {
   padding: 1.5em 2em;
   margin: 0 0 3em;
   @include box-shadow(0 0 0 1px darken($color-section, 4%));
-  
+
   code {
     word-break: break-all;
     font-family: monospace, monospace;
@@ -638,10 +638,6 @@ th {
     font-size: .875em;
     padding: 0 .3em;
     @include box-shadow(0 0 0 1px darken($color-section, 10%))
-  }
-
-  a {
-    word-break: break-all;
   }
 
 }
