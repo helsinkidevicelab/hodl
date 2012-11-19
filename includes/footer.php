@@ -9,7 +9,7 @@
 <div class="footer">
   <p>&copy; 2012 Helsinki Open Device Lab.</p>
 </div>
-<script src="/js/scripts-v028.js"></script>
+<script src="/js/scripts-v029.js"></script>
 <script>
   // iOS fixes
   VS.scaleFix();
