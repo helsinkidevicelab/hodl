@@ -13,7 +13,6 @@
 <script>
   // iOS fixes
   VS.scaleFix();
-  VS.hideUrlBar();
 </script>
 <script>
   var _gaq = _gaq || [];

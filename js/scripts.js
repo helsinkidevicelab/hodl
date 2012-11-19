@@ -1,7 +1,7 @@
 /*!
  *  TITLE:    JavaScripts for opendevicelab.com
  *  AUTHOR:   @viljamis
- *  VERSION:  0.28
+ *  VERSION:  0.29
  */
 
 // Variables
@@ -36,14 +36,6 @@ if ((browserUA.search('windows phone os 7') > -1) ||
 
   VS.gestureStart = function () {
     VS.viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.9';
-  };
-
-  VS.hideUrlBar = function () {
-    if (/iPhone/.test(VS.ua) && !pageYOffset && !location.hash) {
-      setTimeout(function () {
-        window.scrollTo(0, 1)
-      }, 1000)
-    }
   };
 
 })(document);
