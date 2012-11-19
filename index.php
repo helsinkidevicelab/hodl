@@ -315,7 +315,7 @@ include("includes/header.php");
             </tr>
           </tbody>
         </table>
-        <p class="footnote">Screen Size measured using <code>document.write(screen.width)</code> and <code>document.write(screen.height)</code> in default browser. If two sizes are listed, then that specific device reports different sizes between portrait/landscape mode. Tool used: <a href="http://bit.ly/mobilereporter" rel="external">http://bit.ly/mobilereporter</a>. Remember that in many cases, these measurements don&#8217;t match the real dimensions of the&nbsp;device.</p>
+        <p class="footnote">Screen size measured using <a href="http://mqtest.io" rel="external">MQtest.io tool</a> (<code>device-width</code> and <code>device-height</code> in CSS). If two sizes are listed, then that specific device reports different sizes between portrait and landscape mode. Remember that in many cases, these measurements don&#8217;t match the real dimensions of the&nbsp;device.</p>
       </div>
     </div>
     <div id="location" class="section location">
