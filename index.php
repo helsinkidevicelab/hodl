@@ -123,7 +123,7 @@ include("includes/header.php");
             </tr>
             <tr>
               <td data-title="Device">Blackberry Curve 9380</td>
-              <td data-title="OS">BB OS 7.0</td>
+              <td data-title="OS">BB OS 7.1</td>
               <td data-customkey="24" data-title="Screen Size">360&nbsp;x&nbsp;480</td>
               <td data-title="Contributor"><a href="https://developer.blackberry.com" rel="external">RIM</a></td>
             </tr>
