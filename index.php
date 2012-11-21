@@ -195,7 +195,7 @@ include("includes/header.php");
             </tr>
             <tr>
               <td data-title="Device">Nintendo Game Boy</td>
-              <td data-title="OS">Game Boy OS</td>
+              <td data-title="OS">Nintendo OS</td>
               <td data-customkey="0" data-title="Screen Size">160&nbsp;x&nbsp;144</td>
               <td data-title="Contributor"><a href="http://twitter.com/viljamis" rel="external">Viljami S.</a></td>
             </tr>
