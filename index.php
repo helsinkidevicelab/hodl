@@ -212,6 +212,12 @@ include("includes/header.php");
               <td data-title="Contributor"><a href="http://www.developer.nokia.com" rel="external">Nokia</a></td>
             </tr>
             <tr>
+              <td data-title="Device">Nokia C5-03</td>
+              <td data-title="OS">S60 5th Edition</td>
+              <td data-customkey="24" data-title="Screen Size">360&nbsp;x&nbsp;640</td>
+              <td data-title="Contributor">Lea-Maija Laitinen</td>
+            </tr>
+            <tr>
               <td data-title="Device">Nokia C7</td>
               <td data-title="OS">Symbian 3</td>
               <td data-customkey="24" data-title="Screen Size">360&nbsp;x&nbsp;640</td>
