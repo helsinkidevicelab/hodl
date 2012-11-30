@@ -58,7 +58,7 @@ include("includes/header.php");
             <tr>
               <td data-title="Device">Amazon Kindle Fire</td>
               <td data-title="OS">Android 2.3</td>
-              <td data-customkey="37" data-title="Screen Size">600&nbsp;x&nbsp;819 / 1024&nbsp;x&nbsp;395</td>
+              <td data-customkey="32" data-title="Screen Size">600&nbsp;x&nbsp;819 / 1024&nbsp;x&nbsp;395</td>
               <td data-title="Contributor"><a href="http://twitter.com/kiskolabs" rel="external">Kisko Labs</a></td>
             </tr>
             <tr>
@@ -148,7 +148,7 @@ include("includes/header.php");
             <tr>
               <td data-title="Device">Google Nexus 7</td>
               <td data-title="OS">Android 4.2</td>
-              <td data-customkey="32" data-title="Screen Size">800&nbsp;x&nbsp;1205 @1.331x</td>
+              <td data-customkey="37" data-title="Screen Size">800&nbsp;x&nbsp;1205 @1.331x</td>
               <td data-title="Contributor"><a href="http://developers.google.com" rel="external">Google</a></td>
             </tr>
             <tr>
