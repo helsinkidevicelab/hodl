@@ -148,7 +148,7 @@ include("includes/header.php");
             <tr>
               <td data-title="Device">Google Nexus 7</td>
               <td data-title="OS">Android 4.2</td>
-              <td data-customkey="37" data-title="Screen Size">800&nbsp;x&nbsp;1205 @1.331x</td>
+              <td data-customkey="32" data-title="Screen Size">800&nbsp;x&nbsp;1205 @1.331x</td>
               <td data-title="Contributor"><a href="http://developers.google.com" rel="external">Google</a></td>
             </tr>
             <tr>
@@ -202,7 +202,7 @@ include("includes/header.php");
             <tr>
               <td data-title="Device">Nintendo DS Lite</td>
               <td data-title="OS">Nintendo OS</td>
-              <td data-customkey="11" data-title="Screen Size">256&nbsp;x&nbsp;192</td>
+              <td data-customkey="11" data-title="Screen Size">256&nbsp;x&nbsp;384</td>
               <td data-title="Contributor"><a href="http://twitter.com/matiaskorhonen" rel="external">Matias Korhonen</a></td>
             </tr>
             <tr>
@@ -292,7 +292,7 @@ include("includes/header.php");
             <tr>
               <td data-title="Device">Pandigital Planet</td>
               <td data-title="OS">Android 2.2.1</td>
-              <td data-customkey="30" data-title="Screen Size">600&nbsp;x&nbsp;800</td>
+              <td data-customkey="37" data-title="Screen Size">833&nbsp;x&nbsp;948 @1.125x</td>
               <td data-title="Contributor"><a href="http://www.coverupaccessories.com" rel="external">Cover-Up</a></td>
             </tr>
             <tr>
