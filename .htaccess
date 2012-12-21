@@ -20,8 +20,8 @@ ErrorDocument 404 /404/
 # //Start Responsive Images 
 RewriteEngine On
 
-RewriteCond %{HTTP_HOST} !^opendevicelab\.com$ [NC]
-RewriteRule ^(.*)$ http://opendevicelab.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} !^devicelab\.fi$ [NC]
+RewriteRule ^(.*)$ http://devicelab.fi/$1 [R=301,L]
 
 # direct image requests to temp
 RewriteCond %{QUERY_STRING} full=(.*)&?
