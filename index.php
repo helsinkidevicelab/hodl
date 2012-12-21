@@ -147,7 +147,7 @@ include("includes/header.php");
             </tr>
             <tr>
               <td data-title="Device">Google Nexus 7</td>
-              <td data-title="OS">Android 4.2</td>
+              <td data-title="OS">Android 4.2.1</td>
               <td data-customkey="37" data-title="Screen Size">800&nbsp;x&nbsp;1205 @1.331x</td>
               <td data-title="Contributor"><a href="http://developers.google.com" rel="external">Google</a></td>
             </tr>
