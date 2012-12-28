@@ -1,6 +1,6 @@
 # Helsinki open device lab
 
-This is the repository of opendevicelab.com and everything hosted under that domain. All changes should go through this repository so that we have a way to go back in history and undo things if/when needed.
+This is the working repository of [devicelab.fi](http://devicelab.fi) site.
 
 
 
