@@ -1,6 +1,6 @@
 /*!
- *  TITLE:    JavaScripts for opendevicelab.com
- *  SOURCE:   http://opendevicelab.com/js/scripts.js
+ *  TITLE:    JavaScripts for devicelab.fi
+ *  SOURCE:   http://devicelab.fi/js/scripts.js
  *  AUTHOR:   @viljamis
  *  VERSION:  0.29
 */

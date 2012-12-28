@@ -1,5 +1,5 @@
 /*!
- *  TITLE:    JavaScripts for opendevicelab.com
+ *  TITLE:    JavaScripts for devicelab.fi
  *  AUTHOR:   @viljamis
  *  VERSION:  0.29
  */
