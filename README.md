@@ -8,7 +8,7 @@ This is the repository of opendevicelab.com and everything hosted under that dom
 
 1. `git clone git@github.com:viljamis/hodl.git`
 2. Comment out lines `LoadModule php5_module libexec/apache2/libphp5.so` and  `Include /private/etc/apache2/extra/httpd-vhosts.conf` in `/etc/apache2/httpd.conf` file.
-3. Add new host `127.0.0.1	opendevicelab` to `/etc/hosts` file.
+3. Add new host `127.0.0.1	devicelab.local` to `/etc/hosts` file.
 4. Add new virtual hosts to `/etc/apache2/extra/httpd-vhosts.conf` file:
     ```
     <VirtualHost *:80>
@@ -17,11 +17,11 @@ This is the repository of opendevicelab.com and everything hosted under that dom
     </VirtualHost>
 
     <VirtualHost *:80>
-       DocumentRoot "/Users/viljami/Sites/opendevicelab.com"
-       ServerName opendevicelab
+       DocumentRoot "/Users/***/Sites/hodl"
+       ServerName devicelab.local
     </VirtualHost>
     ```
-5. Done! Now start Apache from OS X system prefs, start Codekit, and view the site in browser: `http://opendevicelab/`
+5. Done! Now start Apache from OS X system prefs, start Codekit, and view the site in browser: `http://devicelab.local/`
 
 
 #### Deployment:
