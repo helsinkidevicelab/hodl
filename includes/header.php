@@ -16,6 +16,6 @@
     <meta name="description" content="<?php echo $page_description; ?>">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="/css/style-v030.css">
-    <script src="/js/images.js"></script>
+    <script src="/js/images-v02.js"></script>
     <script src="//use.typekit.net/vhc5ixw.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
