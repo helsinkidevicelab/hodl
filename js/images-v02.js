@@ -1,55 +1,5 @@
+// matchMedia polyfill, Author: Scott Jehl, Paul Irish, Nicholas Zakas +
 // Picturefill. Author: Scott Jehl, Filament Group, 2012
-(function (w) {
-  "use strict";
-
-  w.picturefill = function () {
-    var ps = w.document.getElementsByTagName("div");
-
-    // Loop the pictures
-    for (var i = 0, il = ps.length; i < il; i++) {
-      if (ps[i].getAttribute("data-picture") !== null) {
-
-        var sources = ps[i].getElementsByTagName("div"),
-          matches = [];
-
-        // See if which sources match
-        for (var j = 0, jl = sources.length; j < jl; j++) {
-          var media = sources[j].getAttribute("data-media");
-          // if there's no media specified, OR w.matchMedia is supported 
-          if (!media || (w.matchMedia && w.matchMedia(media).matches)) {
-            matches.push(sources[j]);
-          }
-        }
-
-      // Find any existing img element in the picture element
-      var picImg = ps[i].getElementsByTagName("img")[0];
-
-      if (matches.length) {
-        if (!picImg) {
-          picImg = w.document.createElement("img");
-          picImg.alt = ps[i].getAttribute("data-alt");
-          ps[i].appendChild(picImg);
-        }
-
-        picImg.src =  matches.pop().getAttribute("data-src");
-      } else if (picImg) {
-        ps[i].removeChild(picImg);
-      }
-    }
-    }
-  };
-
-  // Run on resize and domready (w.load as a fallback)
-  if (w.addEventListener) {
-    w.addEventListener("resize", w.picturefill, false);
-    w.addEventListener("DOMContentLoaded", function () {
-      w.picturefill();
-      // Run once only
-      w.removeEventListener("load", w.picturefill, false);
-    }, false);
-    w.addEventListener("load", w.picturefill, false);
-  } else if (w.attachEvent) {
-    w.attachEvent("onload", w.picturefill);
-  }
-
-}(this));
+window.matchMedia=window.matchMedia||function(a){var d,c=a.documentElement,g=c.firstElementChild||c.firstChild,b=a.createElement("body"),e=a.createElement("div");e.id="mq-test-1";e.style.cssText="position:absolute;top:-100em";b.style.background="none";b.appendChild(e);return function(a){e.innerHTML='&shy;<style media="'+a+'"> #mq-test-1 { width: 42px; }</style>';c.insertBefore(b,g);d=42===e.offsetWidth;c.removeChild(b);return{matches:d,media:a}}}(document);
+(function(a){a.picturefill=function(){for(var d=a.document.getElementsByTagName("div"),c=0,g=d.length;c<g;c++)if(null!==d[c].getAttribute("data-picture")){for(var b=d[c].getElementsByTagName("div"),e=[],f=0,j=b.length;f<j;f++){var h=b[f].getAttribute("data-media");(!h||a.matchMedia&&a.matchMedia(h).matches)&&e.push(b[f])}b=d[c].getElementsByTagName("img")[0];e.length?(b||(b=a.document.createElement("img"),b.alt=d[c].getAttribute("data-alt"),d[c].appendChild(b)),b.src=e.pop().getAttribute("data-src")):
+b&&d[c].removeChild(b)}};a.addEventListener?(a.addEventListener("resize",a.picturefill,!1),a.addEventListener("DOMContentLoaded",function(){a.picturefill();a.removeEventListener("load",a.picturefill,!1)},!1),a.addEventListener("load",a.picturefill,!1)):a.attachEvent&&a.attachEvent("onload",a.picturefill)})(this);
