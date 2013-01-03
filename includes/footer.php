@@ -7,7 +7,17 @@
 ?>
 
 <div class="footer">
-  <p>&copy; 2012 Helsinki Open Device Lab.</p>
+  <div class="wrapper">
+    <div class="sponsors">
+      <a href="http://kiskolabs.com" class="kisko" rel="external">Kisko Labs</a>
+      <a href="http://developer.blackberry.com" class="blackberry" rel="external">Blackberry</a>
+      <a href="http://www.coverupaccessories.com" class="coverup" rel="external">Cover-Up</a>
+      <a href="http://developers.google.com" class="google" rel="external">Google</a>
+      <a href="http://www.hpwebos.com" class="hp" rel="external">HP</a>
+      <a href="http://www.developer.nokia.com" class="nokia" rel="external">Nokia</a>
+      <a href="http://developer.sonymobile.com" class="sony" rel="external">Sony</a>
+    </div>
+  </div>
 </div>
 <script src="/js/scripts-v029.js"></script>
 <script>

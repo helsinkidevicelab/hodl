@@ -12,7 +12,7 @@
 
   TITLE:    Styles for devicelab.fi
   AUTHOR:   @viljamis
-  VERSION:  0.30
+  VERSION:  0.31
 
   MEMO FOR CONVERSIONS:
   75%       =   12px, percentage(12 / 16)
@@ -640,6 +640,41 @@ th {
     @include box-shadow(0 0 0 1px darken($color-section, 10%))
   }
 
+}
+
+/*
+  FOOTER SPONSORS
+--------------------------------------------- */
+.sponsors {
+  width: 100%;
+  float: left;
+  text-align: center;
+  a {
+    @include image-replacement;
+    margin-right: 0.5em;
+    display: inline-block;
+    height: 56px;
+    background: transparent url("../img/sponsors-sml.png") no-repeat;
+  }
+  .kisko { width: 60px; background-position: -228px -4px }
+  .blackberry { width: 182px; background-position: 0 -6px }
+  .coverup { width: 178px; background-position: -30px -145px }
+  .google { width: 128px; background-position: -246px -79px }
+  .hp { width: 65px; background-position: -330px -6px }
+  .nokia { width: 155px; background-position: -248px -140px }
+  .sony { width: 137px; background-position: -36px -72px }
+}
+
+/* HIGH DPI SCREENS
+--------------------------------------------- */
+@media screen and (-webkit-min-device-pixel-ratio: 1.3),
+screen and (min--moz-device-pixel-ratio: 1.3),
+screen and (-o-min-device-pixel-ratio: 2/1),
+screen and (min-device-pixel-ratio: 1.3),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+  background-image: url("../img/sponsors-lrg.png");
+  @include background-size(400px 200px !important);
 }
 
 /*
