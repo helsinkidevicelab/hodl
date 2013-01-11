@@ -335,7 +335,7 @@ include("includes/header.php");
             </tr>
             <tr>
               <td data-title="Device">Sony X10 mini Pro</td>
-              <td data-title="OS">Android 1.6</td>
+              <td data-title="OS">Android 2.1</td>
               <td data-customkey="10" data-title="Screen Size">240&nbsp;x&nbsp;320</td>
               <td data-title="Contributor"><a href="http://developer.sonymobile.com" rel="external">Sony</a></td>
             </tr>
