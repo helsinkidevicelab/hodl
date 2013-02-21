@@ -190,12 +190,6 @@ include("includes/header.php");
               <td data-title="Contributor"><a href="http://twitter.com/jonikorpi" rel="external">Joni Korpi</a></td>
             </tr>
             <tr>
-              <td data-title="Device">HTC Desire HD</td>
-              <td data-title="OS">Android 2.3.5</td>
-              <td data-customkey="26" data-title="Screen Size">369&nbsp;x&nbsp;546 @1.5x</td>
-              <td data-title="Contributor"><a href="http://twitter.com/apeisa" rel="external">Antti Peisa</a></td>
-            </tr>
-            <tr>
               <td data-title="Device">Huawei U8650</td>
               <td data-title="OS">Android 2.3.3</td>
               <td data-customkey="22" data-title="Screen Size">320&nbsp;x&nbsp;401</td>
