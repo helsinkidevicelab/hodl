@@ -209,7 +209,7 @@ include("includes/header.php");
             </tr>
             <tr>
               <td data-title="Device">Nokia Lumia 800</td>
-              <td data-title="OS">Windows Phone 7.5</td>
+              <td data-title="OS">Windows Phone 7.8</td>
               <td data-customkey="28" data-title="Screen Size">480&nbsp;x&nbsp;800</td>
               <td data-title="Contributor"><a href="http://twitter.com/Riussi" rel="external">Juha Ristolainen</a></td>
             </tr>
