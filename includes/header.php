@@ -17,5 +17,5 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="/css/style-v031.css">
     <script src="/js/images-v02.js"></script>
-    <script src="//use.typekit.net/vhc5ixw.js"></script>
+    <script src="//use.typekit.net/hvo1evv.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
