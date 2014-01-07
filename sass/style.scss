@@ -124,7 +124,7 @@ img {
   border: 0;
 }
 
-img, embed, object, video { 
+img, embed, object, video {
   max-width: 100%;
   height: inherit;
   _width: 100%;
@@ -625,7 +625,7 @@ th {
   background: rgba($color-white, .4);
   @include border-radius(3px);
   font-size: percentage(14 / 16);
-  line-height: 1.4; 
+  line-height: 1.4;
   padding: 1.5em 2em;
   margin: 0 0 3em;
   @include box-shadow(0 0 0 1px darken($color-section, 4%));
@@ -656,9 +656,9 @@ th {
     height: 56px;
     background-color: transparent;
     background-repeat: no-repeat;
-    background-image: url("../img/sponsors-sml.png");
+    background-image: url("../img/sponsors2-sml.png");
   }
-  .kisko { width: 60px; background-position: -228px -4px }
+  .adtile { width: 60px; background-position: -228px -6px }
   .blackberry { width: 182px; background-position: 0 -6px }
   .coverup { width: 178px; background-position: -30px -145px }
   .google { width: 128px; background-position: -246px -79px }
@@ -676,7 +676,7 @@ screen and (min-device-pixel-ratio: 1.3),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
   .sponsors a {
-    background-image: url("../img/sponsors-lrg.png");
+    background-image: url("../img/sponsors2-lrg.png");
     @include background-size(400px 200px !important);
   }
 }
@@ -723,8 +723,8 @@ screen and (min-resolution: 2dppx) {
   .illustration {
     min-height: 300px;
   }
-  
-  
+
+
   .wrapper {
     width: 90%;
   }
@@ -947,7 +947,7 @@ screen and (min-resolution: 2dppx) {
     }
 
     .illustration {
-      margin: 0; 
+      margin: 0;
     }
 
     .nav {
@@ -993,8 +993,8 @@ screen and (min-resolution: 2dppx) {
   .illustration {
     min-height: 500px;
   }
-  
-  
+
+
   .wrapper {
     width: 78%;
   }
@@ -1070,7 +1070,7 @@ screen and (min-resolution: 2dppx) {
   }
 
   .header {
-    
+
     .button {
       margin: 1.8% 5% 0 0;
     }
@@ -1097,7 +1097,7 @@ screen and (min-resolution: 2dppx) {
   body {
     font-size: 125%;
   }
-  
+
   .header {
 
     .button {
