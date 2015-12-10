@@ -436,7 +436,6 @@ th {
 --------------------------------------------- */
 
 .illustration {
-  min-height: 100px;
   background: $color-stroke;
 }
 
@@ -720,11 +719,6 @@ screen and (min-resolution: 2dppx) {
 
 @media screen and (min-width: 42em) {
 
-  .illustration {
-    min-height: 300px;
-  }
-
-
   .wrapper {
     width: 90%;
   }
@@ -828,10 +822,6 @@ screen and (min-resolution: 2dppx) {
 }
 
 @media screen and (min-width: 56em) {
-
-  .illustration {
-    min-height: 400px;
-  }
 
   body {
     // Firefox 3.6 fix
@@ -990,11 +980,6 @@ screen and (min-resolution: 2dppx) {
 
 @media screen and (min-width: 72em) {
 
-  .illustration {
-    min-height: 500px;
-  }
-
-
   .wrapper {
     width: 78%;
   }
@@ -1027,10 +1012,6 @@ screen and (min-resolution: 2dppx) {
 
 @media screen and (min-width: 85em) {
 
-  .illustration {
-    min-height: 600px;
-  }
-
   .wrapper {
     width: 68%;
   }
@@ -1056,10 +1037,6 @@ screen and (min-resolution: 2dppx) {
 }
 
 @media screen and (min-width: 102em) {
-
-  .illustration {
-    min-height: 700px;
-  }
 
   body {
     font-size: 112.5%;
