@@ -1,6 +1,0 @@
-default:
-  root: "./build"
-  key: "AKIAJX3CLX5FXAFQDDJA"
-  secret: "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"
-  bucket: "devicelab.fi"
-  region: "eu-west-1"
