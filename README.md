@@ -7,6 +7,9 @@ This is the working repository of [devicelab.fi](http://devicelab.fi) site.
 
 Clone the repository and open index.html in the browser. No config needed.
 
+#### Deployment
+
+Deployed using [Stout](http://stout.is/) to CloudFront and S3. Kisko Labs holds the configuration secrets…
 
 #### License
 Licensed under the MIT license.
