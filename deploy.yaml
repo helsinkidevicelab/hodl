@@ -1,7 +1,6 @@
 default:
-  root: "."
-  files: "*.ico,*.html,css/*,img/*,js/*.*"
-  key: "AKIAJ3Q2PXLUFVWPSNWQ"
-  secret: "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"
+  root: "./build"
+  key: "AKIAJX3CLX5FXAFQDDJA"
+  secret: "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"
   bucket: "devicelab.fi"
   region: "eu-west-1"

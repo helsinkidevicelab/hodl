@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /*
 
   ____\/\\\_________/\\\____/\\\\\\\\\\\\______
@@ -655,7 +657,7 @@ th {
     height: 56px;
     background-color: transparent;
     background-repeat: no-repeat;
-    background-image: url("../img/sponsors2-sml.png");
+    background-image: image-url("sponsors2-sml.png");
   }
   .adtile { width: 60px; background-position: -228px -6px }
   .blackberry { width: 182px; background-position: 0 -6px }
@@ -675,7 +677,7 @@ screen and (min-device-pixel-ratio: 1.3),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
   .sponsors a {
-    background-image: url("../img/sponsors2-lrg.png");
+    background-image: image-url("sponsors2-lrg.png");
     @include background-size(400px 200px !important);
   }
 }

@@ -5,7 +5,7 @@ This is the working repository of [devicelab.fi](http://devicelab.fi) site.
 
 #### Installation:
 
-Clone the repository and open index.html in the browser. No config needed.
+Clone the repository, run `bundle install`, run `./bin/middleman`
 
 #### Deployment
 

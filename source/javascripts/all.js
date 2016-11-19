@@ -12,9 +12,9 @@ var docElement = document.documentElement,
 docElement.className = docElement.className.replace(/(^|\s)no-js preload(\s|$)/, '$1$2');
 
 // If Windows Mobile 7x, 8x or Explorer 9x, 10x
-if ((browserUA.search('windows phone os 7') > -1) || 
-(browserUA.search('windows phone os 8') > -1) || 
-(browserUA.search('msie 9.0') > -1) || 
+if ((browserUA.search('windows phone os 7') > -1) ||
+(browserUA.search('windows phone os 8') > -1) ||
+(browserUA.search('msie 9.0') > -1) ||
 (browserUA.search('msie 10.0') > -1)) {
   docElement.className = docElement.className + ' tablefix';
 }
@@ -163,19 +163,19 @@ sorttable = {
     arguments.callee.done = true;
     // kill the timer
     if (_timer) clearInterval(_timer);
-    
+
     if (!document.createElement || !document.getElementsByTagName) return;
-    
+
     sorttable.DATE_RE = /^(\d\d?)[\/\.-](\d\d?)[\/\.-]((\d\d)?\d\d)$/;
-    
+
     forEach(document.getElementsByTagName('table'), function(table) {
       if (table.className.search(/\bsortable\b/) != -1) {
         sorttable.makeSortable(table);
       }
     });
-    
+
   },
-  
+
   makeSortable: function(table) {
     if (table.getElementsByTagName('thead').length == 0) {
       // table doesn't have a tHead. Since it should have, create one and
@@ -186,9 +186,9 @@ sorttable = {
     }
     // Safari doesn't support table.tHead, sigh
     if (table.tHead == null) table.tHead = table.getElementsByTagName('thead')[0];
-    
+
     if (table.tHead.rows.length != 1) return; // can't cope with two header rows
-    
+
     // Sorttable v1 put rows with a class of "sortbottom" at the bottom (as
     // "total" rows, for example). This is B&R, since what you're supposed
     // to do is put them in a tfoot. So, if there are sortbottom rows,
@@ -210,7 +210,7 @@ sorttable = {
       }
       delete sortbottomrows;
     }
-    
+
     // work through each column and calculate its type
     headrow = table.tHead.rows[0].cells;
     for (var i=0; i<headrow.length; i++) {
@@ -229,7 +229,7 @@ sorttable = {
         dean_addEvent(headrow[i],"click", function(e) {
 
           if (this.className.search(/\bsorttable_sorted\b/) != -1) {
-            // if we're already sorted by this column, just 
+            // if we're already sorted by this column, just
             // reverse the table, which is quicker
             sorttable.reverse(this.sorttable_tbody);
             this.className = this.className.replace('sorttable_sorted',
@@ -242,7 +242,7 @@ sorttable = {
             return;
           }
           if (this.className.search(/\bsorttable_sorted_reverse\b/) != -1) {
-            // if we're already sorted by this column in reverse, just 
+            // if we're already sorted by this column in reverse, just
             // re-reverse the table, which is quicker
             sorttable.reverse(this.sorttable_tbody);
             this.className = this.className.replace('sorttable_sorted_reverse',
@@ -254,7 +254,7 @@ sorttable = {
             this.appendChild(sortfwdind);
             return;
           }
-          
+
           // remove sorttable_sorted classes
           theadrow = this.parentNode;
           forEach(theadrow.childNodes, function(cell) {
@@ -267,7 +267,7 @@ sorttable = {
           if (sortfwdind) { sortfwdind.parentNode.removeChild(sortfwdind); }
           sortrevind = document.getElementById('sorttable_sortrevind');
           if (sortrevind) { sortrevind.parentNode.removeChild(sortrevind); }
-          
+
           this.className += ' sorttable_sorted';
           sortfwdind = document.createElement('span');
           sortfwdind.id = "sorttable_sortfwdind";
@@ -288,18 +288,18 @@ sorttable = {
           //sorttable.shaker_sort(row_array, this.sorttable_sortfunction);
           /* and comment out this one */
           row_array.sort(this.sorttable_sortfunction);
-          
+
           tb = this.sorttable_tbody;
           for (var j=0; j<row_array.length; j++) {
             tb.appendChild(row_array[j][1]);
           }
-          
+
           delete row_array;
         });
       }
     }
   },
-  
+
   guessType: function(table, column) {
     // guess the type of a column based on its first non-blank row
     sortfn = sorttable.sort_alpha;
@@ -309,7 +309,7 @@ sorttable = {
         if (text.match(/^-?[�$�]?[\d,.]+%?$/)) {
           return sorttable.sort_numeric;
         }
-        // check for a date: dd/mm/yyyy or dd/mm/yy 
+        // check for a date: dd/mm/yyyy or dd/mm/yy
         // can have / or . or - as separator
         // can be mm/dd as well
         possdate = text.match(sorttable.DATE_RE)
@@ -332,19 +332,19 @@ sorttable = {
     }
     return sortfn;
   },
-  
+
   getInnerText: function(node) {
     // gets the text we want to use for sorting for a cell.
     // strips leading and trailing whitespace.
     // this is *not* a generic getInnerText function; it's special to sorttable.
     // for example, you can override the cell text with a customkey attribute.
     // it also gets .value for <input> fields.
-    
+
     if (!node) return "";
 
     hasInputs = (typeof node.getElementsByTagName == 'function') &&
                  node.getElementsByTagName('input').length;
-    
+
     if (node.getAttribute("data-customkey") != null) {
       return node.getAttribute("data-customkey");
     }
@@ -379,7 +379,7 @@ sorttable = {
       }
     }
   },
-  
+
   reverse: function(tbody) {
     // reverse the rows in a tbody
     newrows = [];
@@ -391,14 +391,14 @@ sorttable = {
     }
     delete newrows;
   },
-  
+
   /* sort functions
      each sort function takes two parameters, a and b
      you are comparing a[0] and b[0] */
   sort_numeric: function(a,b) {
     aa = parseFloat(a[0].replace(/[^0-9.-]/g,''));
     if (isNaN(aa)) aa = 0;
-    bb = parseFloat(b[0].replace(/[^0-9.-]/g,'')); 
+    bb = parseFloat(b[0].replace(/[^0-9.-]/g,''));
     if (isNaN(bb)) bb = 0;
     return aa-bb;
   },
@@ -437,7 +437,7 @@ sorttable = {
     if (dt1<dt2) return -1;
     return 1;
   },
-  
+
   shaker_sort: function(list, comp_func) {
     // A stable sort function to allow multi-level sorting of data
     // see: http://en.wikipedia.org/wiki/Cocktail_sort
@@ -467,7 +467,7 @@ sorttable = {
         b++;
 
     } // while(swap)
-  }  
+  }
 }
 
 /* ******************************************************************
