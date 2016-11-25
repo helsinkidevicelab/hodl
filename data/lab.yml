@@ -1,0 +1,226 @@
+---
+devices:
+  - name: Amazon Kindle keyboard
+    os: Kindle 3.3
+    screen_size: 600 x 706
+    contributor: Viljami S.
+    contributor_url: http://twitter.com/viljamis
+  - name: Amazon Kindle Fire
+    os: Android 2.3
+    screen_size: 600 x 819 / 1024 x 395
+    contributor: Kisko Labs
+    contributor_url: http://twitter.com/kiskolabs
+  - name: Apple iPod Touch 2G
+    os: iOS 4.2.1
+    screen_size: 320 x 480
+    contributor: Kisko Labs
+    contributor_url: http://twitter.com/kiskolabs
+  - name: Apple iPod Touch 2G
+    os: iOS 4.2.1
+    screen_size: 320 x 480
+    contributor: Viljami S.
+    contributor_url: http://twitter.com/viljamis
+  - name: Apple iPhone 1G
+    os: iOS 3.1.3
+    screen_size: 320 x 480
+    contributor: Krister Kari
+    contributor_url: https://twitter.com/KristerKari
+  - name: Apple iPhone 3G
+    os: iOS 4.2.1
+    screen_size: 320 x 480
+    contributor: Virgil Mocanu
+  - name: Apple iPhone 3GS
+    os: iOS 4.3.3
+    screen_size: 320 x 480
+    contributor: Viljami S.
+    contributor_url: http://twitter.com/viljamis
+  - name: Apple iPad 1G
+    os: iOS 5.1.1
+    screen_size: 768 x 1024
+    contributor: Viljami S.
+    contributor_url: http://twitter.com/viljamis
+  - name: Blackberry Torch 9810
+    os: BB OS 7.0
+    screen_size: 480 x 640
+    contributor: RIM
+    contributor_url: https://developer.blackberry.com
+  - name: Blackberry Curve 9380
+    os: BB OS 7.1
+    screen_size: 360 x 480
+    contributor: RIM
+    contributor_url: https://developer.blackberry.com
+  - name: Blackberry Playbook
+    os: BB Tablet OS 2.1
+    screen_size: 600 x 1024
+    contributor: RIM
+    contributor_url: https://developer.blackberry.com
+  - name: Ericsson P910s
+    os: Symbian 7.0
+    screen_size: 208 x 320
+    contributor: Joni Korpi
+    contributor_url: http://twitter.com/jonikorpi
+  - name: Fujitsu Amilo
+    os: Windows XP
+    screen_size: 1024 x 768
+    contributor: Viljami S.
+    contributor_url: http://twitter.com/viljamis
+  - name: Geeksphone Keon
+    os: Firefox OS
+    screen_size: 320 x 480
+    contributor: StartHQ
+    contributor_url: https://starthq.com
+  - name: Geeksphone Peak
+    os: Firefox OS
+    screen_size: 540 x 960
+    contributor: StartHQ
+    contributor_url: https://starthq.com
+  - name: Google Nexus 7
+    os: Android 5.0
+    screen_size: 553 x 962
+    contributor: Google
+    contributor_url: http://developers.google.com
+  - name: HP Veer
+    os: webOS 2.1.2
+    screen_size: 320 x 480
+    contributor: HP
+    contributor_url: http://www.hpwebos.com/us/
+  - name: HP TouchPad
+    os: webOS 3.0.5
+    screen_size: 768 x 942 / 1024 x 686
+    contributor: HP
+    contributor_url: http://www.hpwebos.com/us/
+  - name: HP TouchPad
+    os: webOS 3.0.5
+    screen_size: 768 x 942 / 1024 x 686
+    contributor: HP
+    contributor_url: http://www.hpwebos.com/us/
+  - name: HP Pre 3
+    os: webOS 2.2.4
+    screen_size: 320 x 504 / 532 x 320
+    contributor: HP
+    contributor_url: http://www.hpwebos.com/us/
+  - name: HTC Hero
+    os: Android 2.1
+    screen_size: 320 x 480
+    contributor: Joni Korpi
+    contributor_url: http://twitter.com/jonikorpi
+  - name: Leap Motion
+    os: OS X & Windows
+    screen_size: N/A
+    contributor: Viljami S.
+    contributor_url: https://twitter.com/viljamis
+  - name: Nintendo DS Lite
+    os: Nintendo OS
+    screen_size: 256 x 384
+    contributor: Matias Korhonen
+    contributor_url: http://twitter.com/matiaskorhonen
+  - name: Nokia Lumia 800
+    os: Windows Phone 7.8
+    screen_size: 480 x 800
+    contributor: Juha Ristolainen
+    contributor_url: http://twitter.com/Riussi
+  - name: Nokia Lumia 800
+    os: Windows Phone 7.5
+    screen_size: 480 x 800
+    contributor: Nokia
+    contributor_url: http://www.developer.nokia.com
+  - name: Nokia C5-03
+    os: S60 5th Edition
+    screen_size: 360 x 640
+    contributor: Lea-Maija Laitinen
+    contributor_url: https://twitter.com/lea_maija
+  - name: Nokia C7
+    os: Symbian 3
+    screen_size: 360 x 640
+    contributor: Nokia
+    contributor_url: http://www.developer.nokia.com
+  - name: Nokia E7
+    os: Symbian Belle
+    screen_size: 360 x 640
+    contributor: Viljami S.
+    contributor_url: http://twitter.com/viljamis
+  - name: Nokia N9
+    os: Meego 1.2
+    screen_size: 320 x 569
+    contributor: Nokia
+    contributor_url: http://www.developer.nokia.com
+  - name: Nokia N900
+    os: Maemo 5.0
+    screen_size: 800 x 480
+    contributor: Mikael Koponen
+    contributor_url: http://twitter.com/MikaelKoponen
+  - name: Nokia Asha 306
+    os: S40 Asha
+    screen_size: 1280 x 1024
+    contributor: Nokia
+    contributor_url: http://www.developer.nokia.com
+  - name: Nokia 500
+    os: Symbian Belle
+    screen_size: 360 x 640
+    contributor: Viljami S.
+    contributor_url: http://twitter.com/viljamis
+  - name: Nokia N95
+    os: Symbian 9.2, S60
+    screen_size: 240 x 320
+    contributor: Viljami S.
+    contributor_url: http://twitter.com/viljamis
+  - name: Nokia 2700
+    os: S40 5th Edition
+    screen_size: 240 x 320
+    contributor: Viljami S.
+    contributor_url: http://twitter.com/viljamis
+  - name: Nokia 6121
+    os: S40 5th Edition
+    screen_size: 240 x 320
+    contributor: Joao Carlos
+    contributor_url: http://twitter.com/jcxplorer
+  - name: Nokia E50
+    os: Symbian 9.1, S60
+    screen_size: 240 x 320
+    contributor: Antti Salonen
+    contributor_url: http://twitter.com/salantsa
+  - name: Nokia E61i
+    os: Symbian 9.1, S60
+    screen_size: 320 x 240
+    contributor: Viljami S.
+    contributor_url: http://twitter.com/viljamis
+  - name: Nokia E61i
+    os: Symbian 9.1, S60
+    screen_size: 320 x 240
+    contributor: Viljami S.
+    contributor_url: http://twitter.com/viljamis
+  - name: Samsung Galaxy Tab 2
+    os: Android 4.4
+    screen_size: 1024 x 600
+    contributor: Viljami S.
+    contributor_url: http://twitter.com/viljamis
+  - name: Palm Pre 2
+    os: webOS 2.0
+    screen_size: 320 x 480
+    contributor: HP
+    contributor_url: http://www.hpwebos.com/us/
+  - name: Pandigital Planet
+    os: Android 2.2.1
+    screen_size: 833 x 948
+    contributor: Cover-Up
+    contributor_url: http://www.coverupaccessories.com
+  - name: Sony X10 mini
+    os: Android 1.6
+    screen_size: 240 x 320
+    contributor: Sony
+    contributor_url: http://developer.sonymobile.com
+  - name: Sony X10 mini
+    os: Android 1.6
+    screen_size: 240 x 320
+    contributor: Sony
+    contributor_url: http://developer.sonymobile.com
+  - name: Sony X10 mini Pro
+    os: Android 1.6
+    screen_size: 240 x 320
+    contributor: Sony
+    contributor_url: http://developer.sonymobile.com
+  - name: Sony X10 mini Pro
+    os: Android 2.1
+    screen_size: 240 x 320
+    contributor: Sony
+    contributor_url: http://developer.sonymobile.com
