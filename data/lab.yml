@@ -39,6 +39,11 @@ devices:
     screen_size: 768 x 1024
     contributor: Viljami S.
     contributor_url: http://twitter.com/viljamis
+  - name: Apple iPad Air 2
+    os: iOS 10.1
+    screen_size: 1536 x 2048
+    contributor: Kisko Labs
+    contributor_url: https://twitter.com/kiskolabs
   - name: Blackberry Torch 9810
     os: BB OS 7.0
     screen_size: 480 x 640
