@@ -65,6 +65,33 @@
       </tbody>
     </table>
     <p class="footnote">Screen size measured using <a href="http://mqtest.io" rel="external">MQtest.io tool</a>. If two sizes are listed, then that specific device reports different sizes between portrait and landscape mode. Remember that in many cases, these measurements don&#8217;t match the real dimensions of the&nbsp;device.</p>
+    <h2>Legacy Library</h2>
+    <table class="responsive_table sortable">
+      <thead>
+        <tr>
+          <th class="sorttable_sorted">Device<span id="sorttable_sortfwdind">&nbsp;▴</span></th>
+          <th>OS</th>
+          <th>Screen Size</th>
+          <th>Contributor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%- data.legacy.devices.sort_by(&:name).each do |device| %>
+          <tr>
+            <td data-title="Device"><%= device.name %></td>
+            <td data-title="OS"><%= device.os %></td>
+            <td data-customkey="30" data-title="Screen Size"><%= device.screen_size %></td>
+            <td data-title="Contributor">
+              <% if device.contributor_url %>
+                <%= link_to device.contributor, device.contributor_url, rel: "external" %>
+              <% else %>
+                <%= device.contributor %>
+              <% end %>
+          </tr>
+        <%- end %>
+      </tbody>
+    </table>
+    <p class="footnote">Legacy library phones are not kept charged. If you need to have access to devices on this list ask beforehand</p>
   </div>
 </div>
 <div id="location" class="section location">
