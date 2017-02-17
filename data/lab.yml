@@ -1,15 +1,30 @@
 ---
 devices:
-  - name: Amazon Kindle keyboard
-    os: Kindle 3.3
-    screen_size: 600 x 706
-    contributor: Viljami S.
-    contributor_url: https://twitter.com/viljamis
+  - name: Lenovo A Plus
+    os: Android 5.1
+    screen_size: 480 x 854
+    contributor: Kisko Labs
+    contributor_url: https://twitter.com/kiskolabs
+  - name: Huawei Honor 7 Lite
+    os: Android 6.0
+    screen_size: 1080 x 1920
+    contributor: Kisko Labs
+    contributor_url: https://twitter.com/kiskolabs
+  - name: Samsung Galaxy Tab A
+    os: Android 5.0
+    screen_size: 1024 x 768
+    contributor: Kisko Labs
+    contributor_url: https://twitter.com/kiskolabs
   - name: One Plus 3
     os: OxygenOS (Android)
     screen_size: 1920 x 1080 
     contributor: Kisko Labs
     contributor_url: https://twitter.com/kiskolabs
+  - name: Amazon Kindle keyboard
+    os: Kindle 3.3
+    screen_size: 600 x 706
+    contributor: Viljami S.
+    contributor_url: https://twitter.com/viljamis
   - name: Amazon Kindle Fire
     os: Android 2.3
     screen_size: 600 x 819 / 1024 x 395
