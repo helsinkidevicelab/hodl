@@ -9,7 +9,9 @@ Clone the repository, run `bundle install`, run `./bin/middleman`
 
 #### Deployment
 
-Deployed using [Stout](http://stout.is/) to CloudFront and S3. Kisko Labs holds the configuration secrets…
+Deployed using [Stout](http://stout.is/) to CloudFront and S3. The `master` branch is **automatically built and deployed to S3** by Travis CI.
+
+[![Build Status](https://travis-ci.org/helsinkidevicelab/hodl.svg?branch=master)](https://travis-ci.org/helsinkidevicelab/hodl)
 
 #### License
 Licensed under the MIT license.
