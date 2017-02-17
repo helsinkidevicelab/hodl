@@ -1,0 +1,24 @@
+sudo: false
+language: ruby
+cache:
+  bundler: true
+  directories:
+    - build
+rvm:
+  - 2.3.3
+
+before_install:
+  - "echo 'gem: --no-ri --no-rdoc' > ~/.gemrc"
+
+script:
+  - "./bin/middleman build --clean"
+
+# deploy:
+#   skip_cleanup: true
+#   provider: script
+#   script: bin/deploy.sh
+#   on:
+#     branch: master
+
+notifications:
+  email: false
