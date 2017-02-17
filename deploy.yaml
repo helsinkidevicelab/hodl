@@ -1,0 +1,4 @@
+default:
+  root: "./build"
+  bucket: "devicelab.fi"
+  region: "eu-west-1"

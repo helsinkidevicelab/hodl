@@ -6,6 +6,8 @@ cache:
     - build
 rvm:
   - 2.3.3
+env:
+  secure: "UGCLEK+qBz/kPhY92qUAkx1QfHD9VeIfx7Hbrv+5UDCsinVK9uosn61I68T3QbUuI0f0ptmWIU9MqZ87tl4aFMsQzK7CgKz6LhlJxLTCK8yUCLmdg9XtQayRXdTTuG9HNQ2A5V129ry+mrncQzS3G+DLsPRUMTgh2g5HT7+U8c8="
 
 before_install:
   - "echo 'gem: --no-ri --no-rdoc' > ~/.gemrc"
@@ -13,12 +15,12 @@ before_install:
 script:
   - "./bin/middleman build --clean"
 
-# deploy:
-#   skip_cleanup: true
-#   provider: script
-#   script: bin/deploy.sh
-#   on:
-#     branch: master
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: bin/deploy.sh
+  on:
+    branch: master
 
 notifications:
   email: false
