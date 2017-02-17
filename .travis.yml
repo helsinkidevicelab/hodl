@@ -24,3 +24,5 @@ deploy:
 
 notifications:
   email: false
+  flowdock:
+    secure: "J33ytktcJ7DF+tBpNnjsYNHU7C/ixOkdctQgTZxbPXA5dxMC8lpiVv7A35taji1uah8L0Z57OT9HbTe3J88AuBkj4phUIDRJnGPNZ8hauwvN/1Dx93eRussAZhUdJX8D01/bdvgX6AaNdz4+Op6XtBk3y6oG3oGHCHbCG3jHGrM="
