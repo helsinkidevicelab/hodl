@@ -1,5 +1,10 @@
 ---
 devices:
+  - name: ZTE Axon 7
+    os: Android 7.0
+    screen_size: 1440 x 2560
+    contributor: Kisko Labs
+    contributor_url: https://twitter.com/kiskolabs
   - name: Lenovo A Plus
     os: Android 5.1
     screen_size: 480 x 854
