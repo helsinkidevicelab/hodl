@@ -10,6 +10,9 @@ env:
   secure: "UGCLEK+qBz/kPhY92qUAkx1QfHD9VeIfx7Hbrv+5UDCsinVK9uosn61I68T3QbUuI0f0ptmWIU9MqZ87tl4aFMsQzK7CgKz6LhlJxLTCK8yUCLmdg9XtQayRXdTTuG9HNQ2A5V129ry+mrncQzS3G+DLsPRUMTgh2g5HT7+U8c8="
 
 before_install:
+  - export PATH="$HOME/bin:$PATH"
+  - '[ -f "$HOME/bin/stout" ] || wget https://github.com/EagerIO/Stout/releases/download/v1.2.3/stout-linux -O "$HOME/bin/stout"'
+  - chmod u+x "$HOME/bin/stout"
   - "echo 'gem: --no-ri --no-rdoc' > ~/.gemrc"
 
 script:
