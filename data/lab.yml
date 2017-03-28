@@ -1,7 +1,7 @@
 ---
 devices:
   - name: ZTE Axon 7
-    os: Android 6.0
+    os: Android 7.0
     screen_size: 1440 x 2560
     contributor: Kisko Labs
     contributor_url: https://twitter.com/kiskolabs
