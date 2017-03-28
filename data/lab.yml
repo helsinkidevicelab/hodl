@@ -83,6 +83,7 @@ devices:
     os: Windows Phone 7.8
     screen_size: 480 x 800
     contributor: Juha Ristolainen
+    contributor_url: https://twitter.com/Riussi
   - name: Nokia Lumia 800
     os: Windows Phone 7.5
     screen_size: 480 x 800
