@@ -22,7 +22,7 @@ devices:
     contributor_url: https://twitter.com/kiskolabs
   - name: One Plus 3
     os: OxygenOS (Android)
-    screen_size: 1920 x 1080 
+    screen_size: 1920 x 1080
     contributor: Kisko Labs
     contributor_url: https://twitter.com/kiskolabs
   - name: Amazon Kindle keyboard
@@ -54,6 +54,11 @@ devices:
     os: iOS 4.2.1
     screen_size: 320 x 480
     contributor: Virgil Mocanu
+  - name: Apple iPhone 7
+    os: iOS 11
+    screen_size: 750 x 1334
+    contributor: Kisko Labs
+    contributor_url: https://twitter.com/kiskolabs
   - name: Apple iPhone 3GS
     os: iOS 4.3.3
     screen_size: 320 x 480
